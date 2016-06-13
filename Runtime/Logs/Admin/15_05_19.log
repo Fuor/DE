@@ -1,0 +1,1705 @@
+[ 2015-05-19T16:17:23+08:00 ] 127.0.0.1 /DE/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: mg_id D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 22 行.
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='' [ RunTime:0.1030s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+NOTIC: [8] Undefined variable: waitSecond D:\PHP\wamp\www\ThinkPHP\ThinkPHP\Library\Think\Controller.class.php 第 229 行.
+
+[ 2015-05-19T16:17:24+08:00 ] 127.0.0.1 /DE/index.php/Admin/Manager/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2015-05-19T16:17:25+08:00 ] 127.0.0.1 /DE/index.php/Admin/Manager/verifyImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-05-19T16:17:29+08:00 ] 127.0.0.1 /DE/index.php/Admin/Manager/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sw_manager` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `sw_manager` WHERE `mg_name` = 'admin' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2015-05-19T16:17:29+08:00 ] 127.0.0.1 /DE/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0260s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-05-19T16:17:30+08:00 ] 127.0.0.1 /DE/index.php/Admin/Index/left
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: select * from sw_manager where mg_id=1 [ RunTime:0.0280s ]
+SQL: select * from sw_role where role_id=0 [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Admin\Controller\IndexController.class.php 第 35 行.
+SQL: select * from sw_auth where auth_level=0  [ RunTime:0.0150s ]
+SQL: select * from sw_auth where auth_level=1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-05-19T16:17:30+08:00 ] 127.0.0.1 /DE/index.php/Admin/Index/right
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-05-19T16:17:30+08:00 ] 127.0.0.1 /DE/index.php/Admin/Index/head
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: Think D:\PHP\wamp\www\DE\Runtime\Cache\e8c1e51f5553143b96201eaa9c346e55e1a80dc5.file.head.html.php 第 30 行.
+NOTIC: [8] Trying to get property of non-object D:\PHP\wamp\www\DE\Runtime\Cache\e8c1e51f5553143b96201eaa9c346e55e1a80dc5.file.head.html.php 第 30 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-05-19T16:17:30+08:00 ] 127.0.0.1 /DE/index.php/Admin/Index/admin.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+ERR: 非法操作:admin.css
+
+[ 2015-05-19T16:17:37+08:00 ] 127.0.0.1 /DE/index.php/Admin/Order/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_order` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sw_order` LIMIT 1   [ RunTime:0.0000s ]
+SQL: select * from sw_order Limit 0, 15 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_user` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `sw_user`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_order_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `sw_order_goods`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.240014s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.240014s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-05-19T16:17:41+08:00 ] 127.0.0.1 /DE/index.php/Admin/Order/detail/order_no/201505183507793696
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_order` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_order` WHERE ( order_no='201505183507793696' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_order_goods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_order_goods` WHERE ( order_no='201505183507793696' )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.269016s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.269016s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-05-19T16:18:15+08:00 ] 127.0.0.1 /DE/index.php/Admin/Order/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_order` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sw_order` LIMIT 1   [ RunTime:0.0010s ]
+SQL: select * from sw_order Limit 0, 15 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_user`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_order_goods` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sw_order_goods`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-05-19T16:18:21+08:00 ] 127.0.0.1 /DE/index.php/Admin/Order/deliver/order_no/201505169153021259
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_order` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_order` WHERE ( order_no='201505169153021259' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2015-05-19T16:18:28+08:00 ] 127.0.0.1 /DE/index.php/Admin/Order/deliver/order_no/201505169153021259
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_order` [ RunTime:0.0030s ]
+SQL: UPDATE `sw_order` SET `tracking_type`='圆通',`tracking_num`='300632741154',`status`='2' WHERE ( order_no='201505169153021259' ) [ RunTime:0.0010s ]
+
+[ 2015-05-19T16:18:31+08:00 ] 127.0.0.1 /DE/index.php/Admin/Order/showlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_order` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sw_order` LIMIT 1   [ RunTime:0.0000s ]
+SQL: select * from sw_order Limit 0, 15 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_user`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_order_goods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_order_goods`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-05-19T16:18:33+08:00 ] 127.0.0.1 /DE/index.php/Admin/Order/detail/order_no/201505169153021259
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_order` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_order` WHERE ( order_no='201505169153021259' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_order_goods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_order_goods` WHERE ( order_no='201505169153021259' )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-05-19T16:18:45+08:00 ] 127.0.0.1 /DE/index.php/Admin/Order/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_order` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sw_order` LIMIT 1   [ RunTime:0.0000s ]
+SQL: select * from sw_order Limit 0, 15 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_user`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_order_goods` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sw_order_goods`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-05-19T17:59:54+08:00 ] 127.0.0.1 /DE/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-05-19T17:59:54+08:00 ] 127.0.0.1 /DE/index.php/Admin/Index/head
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: Think D:\PHP\wamp\www\DE\Runtime\Cache\e8c1e51f5553143b96201eaa9c346e55e1a80dc5.file.head.html.php 第 30 行.
+NOTIC: [8] Trying to get property of non-object D:\PHP\wamp\www\DE\Runtime\Cache\e8c1e51f5553143b96201eaa9c346e55e1a80dc5.file.head.html.php 第 30 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-05-19T17:59:54+08:00 ] 127.0.0.1 /DE/index.php/Admin/Index/left
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: select * from sw_manager where mg_id=1 [ RunTime:0.0000s ]
+SQL: select * from sw_role where role_id=0 [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Admin\Controller\IndexController.class.php 第 35 行.
+SQL: select * from sw_auth where auth_level=0  [ RunTime:0.0000s ]
+SQL: select * from sw_auth where auth_level=1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-05-19T17:59:54+08:00 ] 127.0.0.1 /DE/index.php/Admin/Index/right
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-05-19T17:59:54+08:00 ] 127.0.0.1 /DE/index.php/Admin/Index/admin.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+ERR: 非法操作:admin.css
+
+[ 2015-05-19T17:59:58+08:00 ] 127.0.0.1 /DE/index.php/Admin/Order/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_order` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sw_order` LIMIT 1   [ RunTime:0.0000s ]
+SQL: select * from sw_order Limit 0, 15 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_user` [ RunTime:0.0630s ]
+SQL: SELECT * FROM `sw_user`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_order_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `sw_order_goods`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007000s ]
+
+[ 2015-05-19T21:27:15+08:00 ] 127.0.0.1 /DE/index.php/Admin/Order/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_order` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sw_order` LIMIT 1   [ RunTime:0.0000s ]
+SQL: select * from sw_order Limit 0, 15 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `sw_user`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_order_goods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_order_goods`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-05-19T21:27:15+08:00 ] 127.0.0.1 /DE/index.php/Admin/Order/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_order` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sw_order` LIMIT 1   [ RunTime:0.0000s ]
+SQL: select * from sw_order Limit 0, 15 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_user`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_order_goods` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sw_order_goods`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-05-19T21:27:16+08:00 ] 127.0.0.1 /DE/index.php/Admin/Order/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_order` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sw_order` LIMIT 1   [ RunTime:0.0000s ]
+SQL: select * from sw_order Limit 0, 15 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_user`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_order_goods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_order_goods`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-05-19T21:27:16+08:00 ] 127.0.0.1 /DE/index.php/Admin/Order/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_order` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sw_order` LIMIT 1   [ RunTime:0.0010s ]
+SQL: select * from sw_order Limit 0, 15 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_user`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_order_goods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_order_goods`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-05-19T21:27:16+08:00 ] 127.0.0.1 /DE/index.php/Admin/Order/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_order` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sw_order` LIMIT 1   [ RunTime:0.0000s ]
+SQL: select * from sw_order Limit 0, 15 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_user`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_order_goods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_order_goods`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-05-19T21:27:16+08:00 ] 127.0.0.1 /DE/index.php/Admin/Order/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_order` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sw_order` LIMIT 1   [ RunTime:0.0000s ]
+SQL: select * from sw_order Limit 0, 15 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sw_user`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_order_goods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_order_goods`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-05-19T21:27:17+08:00 ] 127.0.0.1 /DE/index.php/Admin/Order/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_order` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sw_order` LIMIT 1   [ RunTime:0.0000s ]
+SQL: select * from sw_order Limit 0, 15 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_user`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_order_goods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_order_goods`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-05-19T21:27:17+08:00 ] 127.0.0.1 /DE/index.php/Admin/Order/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_order` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sw_order` LIMIT 1   [ RunTime:0.0020s ]
+SQL: select * from sw_order Limit 0, 15 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_user` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `sw_user`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_order_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `sw_order_goods`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-05-19T21:27:17+08:00 ] 127.0.0.1 /DE/index.php/Admin/Order/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_order` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sw_order` LIMIT 1   [ RunTime:0.0000s ]
+SQL: select * from sw_order Limit 0, 15 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sw_user`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_order_goods` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sw_order_goods`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-05-19T21:27:17+08:00 ] 127.0.0.1 /DE/index.php/Admin/Order/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_order` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sw_order` LIMIT 1   [ RunTime:0.0010s ]
+SQL: select * from sw_order Limit 0, 15 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_user` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `sw_user`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_order_goods` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `sw_order_goods`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-05-19T21:27:17+08:00 ] 127.0.0.1 /DE/index.php/Admin/Order/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_order` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sw_order` LIMIT 1   [ RunTime:0.0000s ]
+SQL: select * from sw_order Limit 0, 15 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_user`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_order_goods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_order_goods`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-05-19T21:27:18+08:00 ] 127.0.0.1 /DE/index.php/Admin/Order/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_order` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sw_order` LIMIT 1   [ RunTime:0.0000s ]
+SQL: select * from sw_order Limit 0, 15 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_user`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_order_goods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_order_goods`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2015-05-19T21:27:18+08:00 ] 127.0.0.1 /DE/index.php/Admin/Order/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_order` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sw_order` LIMIT 1   [ RunTime:0.0010s ]
+SQL: select * from sw_order Limit 0, 15 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_user` [ RunTime:0.0180s ]
+SQL: SELECT * FROM `sw_user`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_order_goods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_order_goods`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-05-19T21:27:18+08:00 ] 127.0.0.1 /DE/index.php/Admin/Order/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_order` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sw_order` LIMIT 1   [ RunTime:0.0000s ]
+SQL: select * from sw_order Limit 0, 15 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_user`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_order_goods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_order_goods`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-05-19T21:47:12+08:00 ] 127.0.0.1 /DE/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-05-19T21:47:13+08:00 ] 127.0.0.1 /DE/index.php/Admin/Index/head
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: Think D:\PHP\wamp\www\DE\Runtime\Cache\e8c1e51f5553143b96201eaa9c346e55e1a80dc5.file.head.html.php 第 30 行.
+NOTIC: [8] Trying to get property of non-object D:\PHP\wamp\www\DE\Runtime\Cache\e8c1e51f5553143b96201eaa9c346e55e1a80dc5.file.head.html.php 第 30 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-05-19T21:47:13+08:00 ] 127.0.0.1 /DE/index.php/Admin/Index/left
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: select * from sw_manager where mg_id=1 [ RunTime:0.0010s ]
+SQL: select * from sw_role where role_id=0 [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Admin\Controller\IndexController.class.php 第 35 行.
+SQL: select * from sw_auth where auth_level=0  [ RunTime:0.0010s ]
+SQL: select * from sw_auth where auth_level=1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-05-19T21:47:13+08:00 ] 127.0.0.1 /DE/index.php/Admin/Index/right
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-05-19T21:47:13+08:00 ] 127.0.0.1 /DE/index.php/Admin/Index/admin.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+ERR: 非法操作:admin.css
+
+[ 2015-05-19T21:47:16+08:00 ] 127.0.0.1 /DE/index.php/Admin/Goods/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_goods` [ RunTime:0.0170s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sw_goods` LIMIT 1   [ RunTime:0.0000s ]
+SQL: select * from sw_goods Limit 0, 5 [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0450s ]
+SQL: SELECT * FROM `sw_category`  [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined offset: 3 D:\PHP\wamp\www\DE\Runtime\Cache\baca7902857d5f6e5791a18d44fea0da67c92754.file.showlist.html.php 第 91 行.
+NOTIC: [8] Undefined offset: 3 D:\PHP\wamp\www\DE\Runtime\Cache\baca7902857d5f6e5791a18d44fea0da67c92754.file.showlist.html.php 第 91 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-05-19T21:47:20+08:00 ] 127.0.0.1 /DE/index.php/Admin/Goods/update/goods_id/19
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_goods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_goods` WHERE `goods_id` = 19 LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_category` WHERE `pid` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-05-19T21:47:59+08:00 ] 127.0.0.1 /DE/index.php/Admin/Goods/getCat
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_category` WHERE `pid` = 11  [ RunTime:0.0010s ]
+
+[ 2015-05-19T21:48:00+08:00 ] 127.0.0.1 /DE/index.php/Admin/Goods/getCat
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_category` WHERE `pid` = 19  [ RunTime:0.0000s ]
+
+[ 2015-05-19T21:48:03+08:00 ] 127.0.0.1 /DE/index.php/Admin/Goods/update/goods_id/19
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_goods` [ RunTime:0.0020s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\PHP\wamp\www\ThinkPHP\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: UPDATE `sw_goods` SET `goods_name`='三星SGH-F258',`catid`='19',`goods_price`='858.00',`goods_no`='i2208',`goods_number`='12',`goods_weight`='111',`goods_introduce`='&lt;p&gt;诺基亚N855qq&lt;img src=&quot;/DE/Public/upload/20150409/1428558673136884.jpg&quot; title=&quot;1428558673136884.jpg&quot; alt=&quot;5519ec3a0001bb6012000530-500-284.jpg&quot;/&gt;&lt;/p&gt;',`goods_big_img`='upload/2015-05-19/555b3f133728b.jpg',`goods_small_img`='upload/2015-05-19/small_555b3f133728b.jpg' WHERE `goods_id` = 19 [ RunTime:0.0370s ]
+
+[ 2015-05-19T21:48:06+08:00 ] 127.0.0.1 /DE/index.php/Admin/Goods/showlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_goods` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sw_goods` LIMIT 1   [ RunTime:0.0000s ]
+SQL: select * from sw_goods Limit 0, 5 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sw_category`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined offset: 3 D:\PHP\wamp\www\DE\Runtime\Cache\baca7902857d5f6e5791a18d44fea0da67c92754.file.showlist.html.php 第 91 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-05-19T21:48:10+08:00 ] 127.0.0.1 /DE/index.php/Admin/Goods/update/goods_id/21
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_goods` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sw_goods` WHERE `goods_id` = 21 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_category` WHERE `pid` = 0  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-05-19T21:48:16+08:00 ] 127.0.0.1 /DE/index.php/Admin/Goods/getCat
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sw_category` WHERE `pid` = 13  [ RunTime:0.0000s ]
+
+[ 2015-05-19T21:48:17+08:00 ] 127.0.0.1 /DE/index.php/Admin/Goods/getCat
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `sw_category` WHERE `pid` = 22  [ RunTime:0.0000s ]
+
+[ 2015-05-19T21:48:21+08:00 ] 127.0.0.1 /DE/index.php/Admin/Goods/update/goods_id/21
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_goods` [ RunTime:0.0030s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\PHP\wamp\www\ThinkPHP\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: UPDATE `sw_goods` SET `goods_name`='金立 A30',`catid`='22',`goods_price`='2000.00',`goods_no`='i2208',`goods_number`='40',`goods_weight`='111',`goods_introduce`='&lt;p&gt;诺基亚N855qq&lt;img src=&quot;/DE/Public/upload/20150409/1428558673136884.jpg&quot; title=&quot;1428558673136884.jpg&quot; alt=&quot;5519ec3a0001bb6012000530-500-284.jpg&quot;/&gt;&lt;/p&gt;',`goods_big_img`='upload/2015-05-19/555b3f2510d57.jpg',`goods_small_img`='upload/2015-05-19/small_555b3f2510d57.jpg' WHERE `goods_id` = 21 [ RunTime:0.0080s ]
+
+[ 2015-05-19T21:48:24+08:00 ] 127.0.0.1 /DE/index.php/Admin/Goods/showlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_goods` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sw_goods` LIMIT 1   [ RunTime:0.0010s ]
+SQL: select * from sw_goods Limit 0, 5 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sw_category`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-05-19T21:48:30+08:00 ] 127.0.0.1 /DE/index.php/Admin/Goods/update/goods_id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_goods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_goods` WHERE `goods_id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_category` WHERE `pid` = 0  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-05-19T21:48:34+08:00 ] 127.0.0.1 /DE/index.php/Admin/Goods/update/goods_id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_goods` [ RunTime:0.0030s ]
+NOTIC: [2] finfo_file(): Empty filename or path D:\PHP\wamp\www\ThinkPHP\ThinkPHP\Library\Think\Upload.class.php 第 152 行.
+
+[ 2015-05-19T21:48:37+08:00 ] 127.0.0.1 /DE/index.php/Admin/Goods/update/goods_id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_goods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_goods` WHERE `goods_id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_category` WHERE `pid` = 0  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-05-19T21:48:40+08:00 ] 127.0.0.1 /DE/index.php/Admin/Goods/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_goods` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sw_goods` LIMIT 1   [ RunTime:0.0000s ]
+SQL: select * from sw_goods Limit 0, 5 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_category`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-05-19T21:48:43+08:00 ] 127.0.0.1 /DE/index.php/Admin/Goods/update/goods_id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_goods` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sw_goods` WHERE `goods_id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_category` WHERE `pid` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-05-19T21:48:46+08:00 ] 127.0.0.1 /DE/index.php/Admin/Goods/getCat
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sw_category` WHERE `pid` = 17  [ RunTime:0.0000s ]
+
+[ 2015-05-19T21:48:53+08:00 ] 127.0.0.1 /DE/index.php/Admin/Goods/update/goods_id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_goods` [ RunTime:0.0030s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\PHP\wamp\www\ThinkPHP\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: UPDATE `sw_goods` SET `goods_name`='诺基亚666原装充1',`catid`='0',`goods_price`='33.00',`goods_no`='i2208',`goods_number`='97',`goods_weight`='111',`goods_introduce`='&lt;p&gt;诺基亚N855qq&lt;img src=&quot;/DE/Public/upload/20150409/1428558673136884.jpg&quot; title=&quot;1428558673136884.jpg&quot; alt=&quot;1428558673136884.jpg&quot; width=&quot;500&quot; height=&quot;284&quot; border=&quot;0&quot; vspace=&quot;0&quot; style=&quot;width: 500px; height: 284px;&quot;/&gt;&lt;/p&gt;',`goods_big_img`='upload/2015-05-19/555b3f458a232.jpg',`goods_small_img`='upload/2015-05-19/small_555b3f458a232.jpg' WHERE `goods_id` = 3 [ RunTime:0.0470s ]
+
+[ 2015-05-19T21:48:56+08:00 ] 127.0.0.1 /DE/index.php/Admin/Goods/showlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_goods` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sw_goods` LIMIT 1   [ RunTime:0.0000s ]
+SQL: select * from sw_goods Limit 0, 5 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_category`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Runtime\Cache\baca7902857d5f6e5791a18d44fea0da67c92754.file.showlist.html.php 第 91 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-05-19T22:32:22+08:00 ] 127.0.0.1 /DE/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: mg_id D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 22 行.
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+NOTIC: [8] Undefined variable: waitSecond D:\PHP\wamp\www\ThinkPHP\ThinkPHP\Library\Think\Controller.class.php 第 229 行.
+
+[ 2015-05-19T22:32:23+08:00 ] 127.0.0.1 /DE/index.php/Admin/Manager/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-05-19T22:32:23+08:00 ] 127.0.0.1 /DE/index.php/Admin/Manager/verifyImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-05-19T22:32:25+08:00 ] 127.0.0.1 /DE/index.php/Admin/Manager/verifyImg?code=0.8432137297932059
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-05-19T22:32:26+08:00 ] 127.0.0.1 /DE/index.php/Admin/Manager/verifyImg?code=0.0737886258866638
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-05-19T22:32:30+08:00 ] 127.0.0.1 /DE/index.php/Admin/Manager/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sw_manager` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sw_manager` WHERE `mg_name` = 'admin' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2015-05-19T22:32:30+08:00 ] 127.0.0.1 /DE/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-05-19T22:32:30+08:00 ] 127.0.0.1 /DE/index.php/Admin/Index/head
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: Think D:\PHP\wamp\www\DE\Runtime\Cache\e8c1e51f5553143b96201eaa9c346e55e1a80dc5.file.head.html.php 第 30 行.
+NOTIC: [8] Trying to get property of non-object D:\PHP\wamp\www\DE\Runtime\Cache\e8c1e51f5553143b96201eaa9c346e55e1a80dc5.file.head.html.php 第 30 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2015-05-19T22:32:30+08:00 ] 127.0.0.1 /DE/index.php/Admin/Index/left
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: select * from sw_manager where mg_id=1 [ RunTime:0.0010s ]
+SQL: select * from sw_role where role_id=0 [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Admin\Controller\IndexController.class.php 第 35 行.
+SQL: select * from sw_auth where auth_level=0  [ RunTime:0.0010s ]
+SQL: select * from sw_auth where auth_level=1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-05-19T22:32:30+08:00 ] 127.0.0.1 /DE/index.php/Admin/Index/right
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-05-19T22:32:30+08:00 ] 127.0.0.1 /DE/index.php/Admin/Index/admin.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+ERR: 非法操作:admin.css
+
+[ 2015-05-19T22:32:33+08:00 ] 127.0.0.1 /DE/index.php/Admin/User/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_user` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sw_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: select * from sw_user Limit 0, 15 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-05-19T22:35:30+08:00 ] 127.0.0.1 /DE/index.php/Admin/Goods/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_goods` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sw_goods` LIMIT 1   [ RunTime:0.0010s ]
+SQL: select * from sw_goods Limit 0, 5 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0280s ]
+SQL: SELECT * FROM `sw_category`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Runtime\Cache\baca7902857d5f6e5791a18d44fea0da67c92754.file.showlist.html.php 第 91 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-05-19T23:29:24+08:00 ] 127.0.0.1 /DE/index.php/Admin/Goods/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_goods` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sw_goods` LIMIT 1   [ RunTime:0.0010s ]
+SQL: select * from sw_goods Limit 0, 5 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_category`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Runtime\Cache\baca7902857d5f6e5791a18d44fea0da67c92754.file.showlist.html.php 第 91 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-05-19T23:29:25+08:00 ] 127.0.0.1 /DE/index.php/Admin/Goods/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_category` WHERE `pid` = 0  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2015-05-19T23:29:28+08:00 ] 127.0.0.1 /DE/index.php/Admin/Goods/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_goods` [ RunTime:0.0030s ]
+NOTIC: [2] finfo_file(): Empty filename or path D:\PHP\wamp\www\ThinkPHP\ThinkPHP\Library\Think\Upload.class.php 第 152 行.
+NOTIC: [8] Undefined variable: waitSecond D:\PHP\wamp\www\ThinkPHP\ThinkPHP\Library\Think\Controller.class.php 第 229 行.
+
+[ 2015-05-19T23:29:29+08:00 ] 127.0.0.1 /DE/index.php/Admin/Goods/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_goods` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_category` WHERE `pid` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-05-19T23:29:31+08:00 ] 127.0.0.1 /DE/index.php/Admin/Goods/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_goods` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sw_goods` LIMIT 1   [ RunTime:0.0000s ]
+SQL: select * from sw_goods Limit 0, 5 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_category`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Runtime\Cache\baca7902857d5f6e5791a18d44fea0da67c92754.file.showlist.html.php 第 91 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-05-19T23:29:35+08:00 ] 127.0.0.1 /DE/index.php/Admin/Order/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_order` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sw_order` LIMIT 1   [ RunTime:0.0010s ]
+SQL: select * from sw_order Limit 0, 15 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_user`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_order_goods` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sw_order_goods`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-05-19T23:29:36+08:00 ] 127.0.0.1 /DE/index.php/Admin/Order/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_order` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sw_order` LIMIT 1   [ RunTime:0.0000s ]
+SQL: select * from sw_order Limit 0, 15 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_user`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_order_goods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_order_goods`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-05-19T23:29:37+08:00 ] 127.0.0.1 /DE/index.php/Admin/Order/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_order` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sw_order` LIMIT 1   [ RunTime:0.0000s ]
+SQL: select * from sw_order Limit 0, 15 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_user`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_order_goods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_order_goods`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-05-19T23:29:38+08:00 ] 127.0.0.1 /DE/index.php/Admin/Order/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_order` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sw_order` LIMIT 1   [ RunTime:0.0000s ]
+SQL: select * from sw_order Limit 0, 15 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_user`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_order_goods` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_order_goods`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2015-05-19T23:29:39+08:00 ] 127.0.0.1 /DE/index.php/Admin/Order/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: select role_auth_ac from sw_manager a join sw_role b on a.mg_role_id=b.role_id where a.mg_id='1' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\wamp\www\DE\Component\AdminController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `sw_order` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sw_order` LIMIT 1   [ RunTime:0.0010s ]
+SQL: select * from sw_order Limit 0, 15 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_user`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_order_goods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_order_goods`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+

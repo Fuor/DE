@@ -1,0 +1,114 @@
+<div class="block box">
+    <div class="blank"></div>
+    <div id="ur_here"> 当前位置:
+		<a href="{$smarty.const.__MODULE__}">首页</a> <code>&gt;</code>
+		<a href="{$smarty.const.__CONTROLLER__}/index">用户中心</a> <code>&gt;</code>收货地址
+    </div>
+</div>
+<div class="blank"></div>
+<div class="block box"></div>
+
+<div class="block clearfix" style=" border:1px solid #F5F5F5;">
+	<div class="AreaL" style="width:17%">
+		<h3><span>全部功能</span></h3> 
+		<div id="category_tree" class="box_1" style="font-size:14px" >
+			<dl>
+				<dd>     
+				    <a href="{$smarty.const.__CONTROLLER__}/info">个人信息</a>
+				</dd>
+				<dd>     
+				    <a href="{$smarty.const.__CONTROLLER__}/myorder">我的订单</a>
+				</dd>
+				<dd>     
+				    <a href="{$smarty.const.__MODULE__}/Cart/index">去购物车</a>
+				</dd>
+				<dd>     
+				    <a href="{$smarty.const.__CONTROLLER__}/myreviews">我的评价</a>
+				</dd>
+				<dd>     
+				    <a href="{$smarty.const.__CONTROLLER__}/repass">修改密码</a>
+				</dd>
+			</dl>
+		</div>
+	</div>
+	
+	<!-- 调用JavaScript获取地址表信息 -->
+	<script type="text/javascript" src="{$smarty.const.JS_URL}area.js"></script>
+  	<script>var ajaxurl="{$smarty.const.__CONTROLLER__}/getArea";</script>
+  
+	<div style="float:left;width:80%;">
+		<div style="margin:5px 30px;width:100%">
+			<div><span class="info_span"><a style="color:#FFFFFF;text-decoration:none" href="{$smarty.const.__CONTROLLER__}/info">基本信息</a></span><span class="info_span" style="color:#FF8C00">收货地址</span></div>	
+			<hr>
+			<form class="info" action="{$smarty.const.__SELF__}" method="post">
+			<div class="info">
+				<span class="f5_a">姓&nbsp;名：</span>
+				<input name="name" datatype="z2-4" nullmsg="请输入姓名"  errormsg="姓名为2-4个字符" value="{$infos.name}" style="font-size:14px;">
+				<span class="Validform_checktip"></span>
+			</div>
+			<div class="info">
+				<span class="f5_a">手机号：</span>
+				<input name="phone" class="phone"  datatype="m"  nullmsg="请输入手机号" ignore="ignore" errormsg="请填写正确的手机号" value="{$infos.phone}"  style="font-size:14px;">
+				<span class="Validform_checktip"></span>
+			</div>
+			<div class="info">
+				<span class="f5_a">固&nbsp;话：</span>
+				<input name="telephone" datatype="phone" nullmsg="手机与固话必须填写一项！" errormsg="请填写正确的号码！" value="{$infos.telephone}"  style="font-size:14px;">
+				<span class="Validform_checktip"></span>
+			</div>
+			<div class="info">
+				<span class="f5_a">邮&nbsp;编：</span>
+				<input name="postcode" datatype="p" nullmsg="请输入邮编"  errormsg="请填写正确的邮编号" value="{$infos.postcode}"  style="font-size:14px;">
+				<span class="Validform_checktip"></span>
+			</div>
+			{if {$infos.adress}}
+			<div class="f5_a"><span>地&nbsp;址：</span>{$infos.adress}</div>
+			{else}
+			<div class="f5_a">您还没有设置收货地址，请在下面进行设置。</div>
+			{/if}
+				<div class="info">
+				<span class="f5_a">新地址：</span>
+					<select name="province" id="province" onchange="loadArea(this.value,'city')">
+				        <option value="-1" selected>省份/直辖市</option>
+				        {foreach $province as $k=>$v}
+				        	<option name="province" value="{$v.area_id}">{$v.area_name}</option>
+				        {/foreach}
+				    </select>
+				    <select name="city" id="city" onchange="loadArea(this.value,'district')">
+				        <option value="-1">市/县</option>
+				    </select>
+				    <select name="district" id="district" onchange="loadArea(this.value,'null')">
+				        <option value="-1">镇/区</option>
+				    </select>
+						<input type="text" name="detail" datatype="*3-64" nullmsg="请输入详细地址"  errormsg="请填写正确的地址" ignore="ignore" placeholder="详细地址" style="width:250px;">
+						<span class="Validform_checktip"></span>
+					<div class="info">
+						<span class="f5_a"></span>
+						<!-- 隐藏传递用户ID以便根据ID进行更新 -->
+						<input type="hidden" name="user_id" value="{$infos.user_id}">
+						<input type="submit" value="保存"  style="width:60px;height:30px;font-size:14px;background:#0963c4;color:#fff"></div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+$(function(){
+	$(".info").Validform({
+		tiptype:1,
+		datatype:{
+		{literal}
+		"z2-4":/^[\u4E00-\u9FA5\uf900-\ufa2d]{2,4}$/,
+		"phone":function(gets,obj,curform,regxp){
+			var reg1=regxp["m"],
+				reg2=/[\d]{7}/,
+				phone=curform.find(".phone");
+			if(reg1.test(phone.val())){return true;}
+			if(reg2.test(gets)){return true;}
+			return false;}
+		{/literal}
+		}
+	});
+})
+</script>

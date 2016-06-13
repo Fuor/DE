@@ -1,0 +1,53 @@
+body {
+	margin:0;
+	padding:0;
+	font: 12px/150% Arial, "宋体", Helvetica, sans-serif;
+	text-decoration: none
+}
+dl,dd {
+    margin:0;
+}
+#user_login {
+	border:1px solid #ccc;
+	width:600px;
+	margin:100px auto;
+}
+
+#user_top {
+    width:600px;
+    height:70px;
+    text-align:center;
+    background-color:blue;
+}
+
+.user_main_box,.submit {
+	width:300px;
+	margin:10px auto;
+}
+
+#admin_user,#admin_psd,#captcha {
+	margin:10px auto;
+	width:300px;
+	height:30px;
+	line-height:30px;
+}
+
+.check_code img{
+	height:35px;
+}
+.submit,.check_code {
+	text-align:center;
+}
+.submit input{
+	padding:5px 25px;
+	color:#FFF;
+	font-size:18px; 
+	background:blue; 
+	cursor: pointer;
+	border:0;
+}
+
+.Validform_checktip {
+	color: #FF0000;
+}
+

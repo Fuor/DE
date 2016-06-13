@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+        <title>商品列表</title>
+
+        <link href="{$smarty.const.ADMIN_CSS_URL}mine.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+        <style>
+        	{literal}
+            	.tr_color{background-color: #9F88FF}
+        	{/literal}
+        </style>
+        <div class="div_head">
+            <span>
+                <span style="float: left;">当前位置是：商品管理-》商品列表</span>
+                <span style="float: right; margin-right: 8px; font-weight: bold;">
+                    <a style="text-decoration: none;" href="{$smarty.const.__MODULE__}/Goods/add">【添加商品】</a>
+                </span>
+            </span>
+        </div>
+        <form class="search" action="{$smarty.const.__CONTROLLER__}/search" method="post">
+	        <div style="margin-left:5px;">
+	            <span><input name="key" datatype="*" nullmsg="请输入关键词。" errormsg="输入有误。" placeholder="请输入商品货号或标题" type="text" /></span>
+	            <span><input type="submit" value="查找"/></span>
+	            <span class="Validform_checktip"></span>
+	        </div>
+        </form>
+        <div style="font-size: 13px; margin: 10px 5px;">
+            <table class="table_a" border="1" width="100%">
+                <tbody><tr style="font-weight: bold;">
+                        <td>序号</td>
+                        <td>商品货号</td>
+                        <td>商品名称</td>
+                        <td>商品分类</td>
+                        <td>库存</td>
+                        <td>销量</td>
+                        <td>价格</td>
+                        <td>重量</td>
+                        <td>图片</td>
+                        <td>缩略图</td>
+                        <td>创建时间</td>
+                        <td align="center">操作</td>
+                    </tr>
+                    {foreach $info as $k =>$v }
+                    <tr id="product1">
+                        <td>{$v.goods_id}</td>
+                        <td>{$v['goods_no']}</td>
+                        <td><a href="{$smarty.const.SITE_URL}index.php/Home/Goods/detail/goods_id/{$v.goods_id}"  target="_blank">{$v.goods_name}</a></td>
+                        <td>{$cate.{$v.goods_category_id}}</td>
+                        <td>{$v.goods_number}</td>
+                        <td>{$v.volume}</td>
+                        <td>{$v.goods_price}</td>
+                        <td>{$v.goods_weight}</td>
+                        <td>
+                        	<a href="{$smarty.const.SITE_URL}index.php/Home/Goods/detail/goods_id/{$v.goods_id}"  target="_blank">
+                        	<img src="{$smarty.const.IMG_UPLOAD}{$v.goods_big_img}" height="60" width="60" />
+                        	</a>
+                        </td>
+                        <td>
+                        	<a href="{$smarty.const.SITE_URL}index.php/Home/Goods/detail/goods_id/{$v.goods_id}"  target="_blank">
+                        	<img src="{$smarty.const.IMG_UPLOAD}{$v.goods_small_img}" height="40" width="40" />
+                        	</a>
+                        </td>
+                        <td>{date("Y-m-d H:i:s",$v.goods_create_time)}</td>
+                        <td>
+                        {if $v.status==0}
+                        	<a href="{$smarty.const.__MODULE__}/Goods/up/goods_id/{$v.goods_id}" >上架</a>
+                        {else}	
+                        	<a href="{$smarty.const.__MODULE__}/Goods/down/goods_id/{$v.goods_id}" >下架</a>
+                        {/if}	
+                        {if $v.hot==0}
+                        	<a href="{$smarty.const.__MODULE__}/Goods/is_hot/goods_id/{$v.goods_id}" >推荐</a>
+                        {else}	
+                        	<a href="{$smarty.const.__MODULE__}/Goods/not_hot/goods_id/{$v.goods_id}" >取消推荐</a>
+                        {/if}	
+                        	<a href="{$smarty.const.__MODULE__}/Goods/update/goods_id/{$v.goods_id}" >修改</a>
+                        	<a onclick="return confirm('确定删除？')" href="{$smarty.const.__MODULE__}/Goods/del/goods_id/{$v.goods_id}">删除</a>
+                        </td>
+                    </tr>
+                   {/foreach}
+                    <tr>
+                        <td colspan="20" style="text-align: center;">
+                            {$pagelist}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+   	<script src="{$smarty.const.JS_URL}jquery-1.8.2.js"></script>
+	<script type="text/javascript" src="{$smarty.const.VALIDFORM_JS_URL}Validform_v5.3.2.js"></script>
+    <script type="text/javascript">
+		$(function(){
+			$(".search").Validform({
+				tiptype:2
+			});
+		})
+	</script>
+	
+    </body>
+</html>

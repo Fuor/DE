@@ -1,0 +1,157 @@
+        <div class="block box">
+            <div class="blank"></div>
+            <div id="ur_here">
+                当前位置: <a href="{$smarty.const.__MODULE__}">首页</a> <code>&gt;</code> <a href="#">{$pcat.cat_name}</a> <code>&gt;</code> <a href="{$smarty.const.__CONTROLLER__}/catlist/id/{$scat.id}">{$scat.cat_name}</a> <code>&gt;</code> {$info.goods_name} 
+            </div>
+        </div>
+        <div class="blank"></div>
+        <div class="block clearfix">
+            <div style="float:left;width:215px;" class="AreaL">
+  				<div id="category_tree" class="box_1">
+                	<h3><span>全部商品分类</span></h3>
+                	{foreach $row as $kk=>$vv}
+	                    <dl>
+	                        <dt><a href="#">{$vv.cat_name}</a></dt>
+	                        <dd>   
+	                        {if $vv.childs}
+	        					{foreach $vv.childs as $kkk=>$vvv}  
+	                            <a href="{$smarty.const.__CONTROLLER__}/catlist/id/{$vvv.id}">{$vvv.cat_name}</a>
+	                            {/foreach}
+	        				{/if}
+	                        </dd>
+	                    </dl>
+                    {/foreach}
+                </div>
+                <div class="blank"></div>
+
+                <div style="display: block;" style="width:215px;" class="box" id="history_div">
+                    <h3><span >热销榜</span></h3>
+                    <div class="box_1" style="width:209px;">
+                        <div class="boxCenterList clearfix" id="history_list">
+                        {foreach $volume as $k=>$v}  
+                            <ul class="clearfix">
+                            	<li class="goodsimg"><a href="{$smarty.const.__CONTROLLER__}/detail/goods_id/{$v.goods_id}" target="_blank"><img src="{$smarty.const.IMG_UPLOAD}{$v.goods_big_img}" alt="{$v.goods_name}" class="B_blue"></a></li>
+                            	<li><a href="{$smarty.const.__CONTROLLER__}/detail/goods_id/{$v.goods_id}" target="_blank" title="{$v.goods_name}">{$v.goods_name}</a>
+                            		<br />本店售价：<font class="f1">{$v.goods_price}</font>
+                            		<br />最近销量：<font class="f1">{$v.volume}</font><br />
+                            	</li>
+                            </ul>
+                        {/foreach}     
+	                    </div>
+                    </div>
+                </div>
+                <div class="blank5"></div>
+            </div>
+            <div id="goodsBox" class="AreaR">
+                <div  id="goodsInfo" class="clearfix">
+                    <div class="imgInfo">
+                        <img src="{$smarty.const.IMG_UPLOAD}{$info.goods_big_img}" alt="{$info.goods_name}" />
+                    </div>
+                    <div class="textInfo">
+<!--                         <form action="{$smarty.const.__MODULE__}/Cart/addItem" method="post" name="ECS_FORMBUY" id="ECS_FORMBUY"> -->
+                            {* 隐藏域传递被修改商品id *}
+            				<input type="hidden" id="goods_id" name="goods_id" value="{$info.goods_id}" />
+                            <div class="goodsName">
+                                <input type="hidden" id="goods_name" name="goods_name" value="{$info.goods_name}" />
+                               {$info.goods_name}      
+                            </div>
+                            <ul>
+                                <li>商品货号：{$info.goods_no}</li> 
+                                <li>最近销量：{$info.volume}</li> 
+                                <li>商品库存：{$info.goods_number}<input type="hidden" id="goods_number" name="goods_number" disabled value="{$info.goods_number}"></input></li>  
+                                <li>商品重量：{$info.goods_weight}克</li>
+                                <li>上架时间：{date("Y-m-d H:i:s",$info.goods_create_time)}</li>
+                                <li>商品单价：￥<input id="goods_price" name="goods_price" readonly value="{$info.goods_price}" style="size:5px; color:red; width:100px; border: 0px solid rgb(255, 255, 255); background-color:white;" ></input></li>
+                                <li>
+                                    <div class="plus-button">
+                                        <span>购买数量：</span>
+	                                    <input type="button" class="numDow" onclick="d_minus();" value=" - " />
+	                                    <input id="number" class="number" name="number" class="goodNum" readonly value="1" type="text"/>
+	                                	<input type="button" class="add" onclick="d_add();" value=" + " />
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="padd">
+                                <input id="submit" type="submit" value="加入购物车"/>
+                                <div class="padd-success">
+                                    
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="blank"></div>
+                <div class="box">
+                    <div class="box_1" >
+                        <h3 class="itemDiscribe">商品描述：</h3>
+                        <div id="com_v" class="boxCenterList RelaArticle">
+                            <p>{htmlspecialchars_decode($info.goods_introduce)}</p>       
+                        </div>
+            		</div>
+            	</div>
+            </div>
+             <div class="blank"></div>
+                <div class="blank5"></div>
+                    <div class="box">
+                        <div style="width:878px;float:right;" class="box_1">
+                            <h3><span class="text">用户评论</span>(共<font class="f1">{$total}</font>条评论)</h3>
+                           
+                            <div class="boxCenterList clearfix" style="height: 1%;">
+                                <ul class="comments">
+                                 {if $total}
+                                 	{foreach $allRevew as $k=>$v}
+                                    <li><span style="margin:10px 10px 10px 10px;"><span><b>{substr_replace($v.username,'**',2,1)}:</b></span><span style="margin-left:20px;font-size:14px;">{$v.review}</span></span><br/>
+                                    	<span style="margin:10px 10px 10px 75px;">{date("Y-m-d H:i:s",$v.add_time)}</span></li>
+                                    {/foreach}
+                                 {else}
+                                  <li>暂时还没有任何用户评论</li>
+                                 {/if}
+                                </ul>
+                                 {if $total}
+                                <div><span>{$pagelist}</span></div>
+                                 {/if}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blank5"></div>
+                    
+                    <div class="box">
+                    <div style="width:1098px;" class="box_1">
+                        <h3><span class="text">系统推荐</span></h3>
+                        <div class="hotGoods">
+                        {foreach $goods as $k=>$v}
+                            <div class="goodsItem">
+                                <a href="{$smarty.const.__CONTROLLER__}/detail/goods_id/{$v.goods_id}">
+                                    <img src="{$smarty.const.IMG_UPLOAD}{$v.goods_big_img}" alt="{$v.goods_name}" class="goodsimg"></a><br />
+                                <p><a href="{$smarty.const.__CONTROLLER__}/detail/goods_id/{$v.goods_id}" title="P806">{$v.goods_name}</a></p> 
+                                <font class="shop_s">￥{$v.goods_price}元</font>
+                            </div>
+                        {/foreach}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <script src="{$smarty.const.JS_URL}goods.js"></script>
+        <script type="text/javascript">
+            $("document").ready(function(){
+            	$(function(){
+            		var couldRun = true;
+		            $("#submit").click(function(){
+		            	if(couldRun) {
+		                    couldRun = false;
+			            	var ajaxurl="{$smarty.const.__MODULE__}/Cart/addItem";
+			            	var datas = {
+			            		 'goods_id':$("#goods_id").val(),
+			            		 'goods_name':$("#goods_name").val(),
+			            		 'goods_price':$("#goods_price").val(),
+			            		 'number':+$("#number").val()
+			            	}
+			            	addItem(ajaxurl,datas);
+		            	}
+		            });
+		            // 一秒后将变为可运行，防止点击过快
+		            setInterval(function(){
+		                couldRun = true;
+		            },1000);
+            	});
+            });
+        </script>

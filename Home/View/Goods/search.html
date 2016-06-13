@@ -1,0 +1,70 @@
+<div class="block box">
+    <div class="blank"></div>
+    <div id="ur_here">
+        	当前位置: <a href="{$smarty.const.__MODULE__}">首页</a> <code>&gt;</code>
+        	 	    <a href="{$smarty.const.__CONTROLLER__}/catlist">商品查找</a> <code>&gt;</code> {$key}
+    </div>
+</div>
+<div class="block">
+    <div style="float:left; width:880px">
+        <div id="category_tree" class="box_1" style="width:880px">
+            {foreach $row as $kk=>$vv}
+                <dl style="margin:0px;padding:0px">
+                    <dt><a href="#">{$vv.cat_name}</a></dt>
+                    <dd>   
+                    {if $vv.childs}
+                        {foreach $vv.childs as $kkk=>$vvv}  
+                        <a href="{$smarty.const.__CONTROLLER__}/catlist/id/{$vvv.id}">{$vvv.cat_name}</a>
+                        {/foreach}
+                    {/if}
+                    </dd>
+                </dl>
+             {/foreach}
+        </div>
+                    
+        <div class="block box">
+            <div class="goodsList">
+                {if $info}
+                    {foreach $info as $k =>$v }
+                    <div class="item">
+                        <div>
+                             <a href="{$smarty.const.__CONTROLLER__}/detail/goods_id/{$v.goods_id}" target="_blank">
+                                <img src="{$smarty.const.IMG_UPLOAD}{$v.goods_big_img}" alt="{$v.goods_name}">
+                             </a>
+                         </div>
+                        <div class="goods-price">￥{$v.goods_price}<span>销量：{$v.volume}</span></div>
+                        <div class="goods-name"><a href="{$smarty.const.__CONTROLLER__}/detail/goods_id/{$v.goods_id}" target="_blank">{$v.goods_name}</a></div>
+                    </div>
+                    {/foreach}
+                    <div class="pagelist">{$pagelist}</div>
+                {else}
+                        <div class="no-item">该分类下暂无商品，看看下面为您推荐的吧。</div>
+                        {foreach $goods as $k =>$v }
+                        <div class="item">
+                            <div>
+                                <a href="{$smarty.const.__CONTROLLER__}/detail/goods_id/{$v.goods_id}" target="_blank">
+                                 <img src="{$smarty.const.IMG_UPLOAD}{$v.goods_big_img}" alt="{$v.goods_name}">
+                                </a>
+                            </div>
+                            <div class="goods-price">￥{$v.goods_price}<span>销量：{$v.volume}</span></div>
+                            <div class="goods-name"><a href="{$smarty.const.__CONTROLLER__}/detail/goods_id/{$v.goods_id}" target="_blank">{$v.goods_name}</a></div>
+                        </div>
+                        {/foreach}
+                {/if}
+            </div>
+        </div>
+    </div>
+    <div class="right-botbar">
+        {foreach $hot as $k=>$v}
+        <div class="hot-item">
+            <div class="hot-img">
+             <a href="{$smarty.const.__CONTROLLER__}/detail/goods_id/{$v.goods_id}" target="_blank">
+                 <img src="{$smarty.const.IMG_UPLOAD}{$v.goods_big_img}" alt="{$v.goods_name}">
+             </a>
+            </div>
+            <div><span class="hot-price">￥{$v.goods_price}</span><span class="hot-volume">销量：{$v.volume}</span></div>
+            <div class="hot-item-name"><a href="{$smarty.const.__CONTROLLER__}/detail/goods_id/{$v.goods_id}" target="_blank">{$v.goods_name}</a></div>
+        </div>
+        {/foreach}
+    </div>
+</div>

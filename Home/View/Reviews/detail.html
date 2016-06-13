@@ -1,0 +1,38 @@
+<div class="block box">
+    <div class="blank"></div>
+    <div id="ur_here"> 当前位置:
+		<a href="{$smarty.const.__MODULE__}">首页</a> <code>&gt;</code>
+		<a href="{$smarty.const.__MODULE__}/User/myreviews">我的评价</a> <code>&gt;</code>评价详情
+    </div>
+</div>
+<div class="blank"></div>
+<div class="block box"></div>
+
+<div style="border:1px solid #d0d0d0;"class="block clearfix">
+		<div style="width:950px;">
+			<span style="font-size:14px;text-align:center;display:inline-block;margin:20px 0px 0px 100px;width:300px;">商品</span>
+			<span style="font-size:14px; text-align:center;display:inline-block;width:200px;">满意度</span>
+			<span style="font-size:14px;display:inline-block;margin:0 100px 0 0;width:200px;">评价</span>
+		</div>
+		<hr/>
+		{foreach $goods as $k=>$v}
+		<div style="width:950px;text-align:left;margin-bottom:20px;">
+				<span style="text-align:center;display:inline-block;margin:20px 0px 0px 100px;width:300px;">
+					<a style="inline-block;" href="{$smarty.const.__MODULE__}/Goods/detail/goods_id/{$v.goods_id}" target="_blank">
+						<img src="{$smarty.const.IMG_UPLOAD}{$v.goods_small_img}" height="100px" width="100px" />
+					</a>
+				</span>
+				<span style=" text-align:center;display:inline-block;width:200px;">
+					{if $reviews[$k]['rate']==0}
+						<font color="green">满意</font>
+					{else if $reviews[$k]['rate']==1}
+						<font color="blue">一般</font>
+					{else}
+						<font color="red">不满意</font>
+					{/if}
+				</span>
+				<span style="display:inline-block;margin:0 100px 0 0;width:200px;">{$reviews[$k]['review']}</span>
+		</div>
+		<hr/>
+		{/foreach}
+</div>

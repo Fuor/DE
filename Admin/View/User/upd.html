@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <title>修改管理员信息</title>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+        <link href="{$smarty.const.ADMIN_CSS_URL}mine.css" type="text/css" rel="stylesheet"/>
+    </head>
+
+    <body>
+
+        <div class="div_head">
+            <span>
+                <span style="float:left">当前位置是：会员管理-》修改会员信息</span>
+                <span style="float:right;margin-right: 8px;font-weight: bold">
+                    <a style="text-decoration: none" href="{$smarty.const.__CONTROLLER__}/showlist">【返回】</a>
+                </span>
+            </span>
+        </div>
+        <div></div>
+
+        <div style="font-size: 13px;margin: 10px 15px 15px 15px">
+            <form class="upd" action="{$smarty.const.__SELF__}" method="post">
+            <ul>
+            	<li class="user_info">会员账号：
+            		<input type="text" readonly value="{$infos.username}"/>
+            	</li>
+            	<li class="user_info">登录密码：
+            		<input type="password" name="password" datatype="s6-64" nullmsg="请输入密码！" errormsg="密码为6~64个字符！" ignore="ignore" value="{$infos.password}"/>
+            	</li>
+            	<li class="check"><span class="Validform_checktip"></span></li>
+            	<li class="user_info">会员姓名：
+            		<input type="text" name="name" datatype="z2-4" nullmsg="请输入姓名"  errormsg="姓名为2-4个字符" value="{$infos.name}"/>
+            	</li>
+            	<li class="check"><span class="Validform_checktip"></span></li>
+            	<li class="user_info">会员性别：
+            		{if $infos.user_sex==0}<input type="text" name="sex" datatype="s1-1" nullmsg="请输入性别"  errormsg="请填写正确的性别" value="男"/>
+            		{else}<input type="text" name="sex" datatype="s1-1" nullmsg="请输入性别"  errormsg="请填写正确的性别" value="女"/>
+            	</li>{/if}
+            	<li class="check"><span class="Validform_checktip"></span></li>
+            	<li class="user_info">会员邮箱：
+            		<input type="text" name="user_email" datatype="e" nullmsg="请输入邮箱"  errormsg="请填写正确的邮箱账号" value="{$infos.user_email}"/>
+            	</li>
+            	<li class="check"><span class="Validform_checktip"></span></li>
+            	<li class="user_info">会员手机：
+            		<input type="text" name="phone" class="phone" datatype="m"  nullmsg="请输入手机号" ignore="ignore" errormsg="请填写正确的手机号" value="{$infos.phone}"/>
+            	</li>
+            	<li class="check"><span class="Validform_checktip"></span></li>
+            	<li class="user_info">会员固话：
+            		<input type="text" name="telephone" datatype="phone" nullmsg="手机与固话必须填写一项！" errormsg="请填写正确的号码！" value="{$infos.telephone}"/>
+            	</li>
+            	<li class="check"><span class="Validform_checktip"></span></li>
+            	<li class="user_info">会员地址：
+            		<input type="text" name="adress" datatype="*3-64" nullmsg="请填写地址！" errormsg="地址为3~64位字符！" value="{$infos.adress}"/>
+            	</li>
+            	<li class="check"><span class="Validform_checktip"></span></li>
+            	<li class="user_info"><input type="submit" value="确认修改"/></li>
+            </ul>
+            </form>
+        </div>
+        
+   	<script src="{$smarty.const.JS_URL}jquery-1.8.2.js"></script>
+	<script type="text/javascript" src="{$smarty.const.VALIDFORM_JS_URL}Validform_v5.3.2.js"></script>
+    <script type="text/javascript">
+		$(function(){
+			$(".upd").Validform({
+				tiptype:2,
+				datatype:{
+					{literal}
+					"z2-4":/^[\u4E00-\u9FA5\uf900-\ufa2d]{2,4}$/,
+					"phone":function(gets,obj,curform,regxp){
+						var reg1=regxp["m"],
+							reg2=/[\d]{7}/,
+							phone=curform.find(".phone");
+						if(reg1.test(phone.val())){return true;}
+						if(reg2.test(gets)){return true;}
+						return false;}
+					{/literal}
+				}
+			});
+		})
+	</script>
+        
+    </body>
+</html>

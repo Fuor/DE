@@ -1,0 +1,180 @@
+        <script src="{$smarty.const.JS_URL}cart.js"></script>
+        <style type="text/css">
+        {literal}
+            table {border:1px solid #dddddd; border-collapse: collapse; width:99%; margin:auto;}
+            td {border:1px solid #dddddd;}
+            #consignee_addr {width:450px;}
+        {/literal}
+        </style>
+
+        <div class="block box">
+            <div class="blank"></div>
+            <div id="ur_here">
+                当前位置: <a href="{$smarty.const.__MODULE__}">首页</a> <code>&gt;</code> 购物车
+            </div>
+        </div>
+        <div class="blank"></div>
+
+        <div class="blank"></div>
+        <div class="block">
+            <div class="flowBox">
+                <h6><span>购物车列表</span></h6>
+                {if !$cart}
+                <div class="block clearfix">
+					<div style="width:1095px;height:200px;border:1px solid #ccc;text-align:center;">
+						<div style="margin-top:90px;">
+							<div style="font-size:14px;">您的购物车空空的，先去逛逛吧。
+								<span><a href="{$smarty.const.__MODULE__}/Goods/catlist">>>去看看</a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				{else}
+                <form id="formCart" class="formCart" action="{$smarty.const.__MODULE__}/Order/index" method="post">
+                    <table cellpadding="5" cellspacing="1">
+                        <tbody><tr>
+                                <th>商品名称</th>
+                                <th>本店价（元）</th>
+                                <th>购买数量</th>
+                                <th>小计（元）</th>
+                                <th>操作</th>
+                            </tr>
+                            {foreach $cart as $k=>$v}
+                            <tr>
+                                <td>
+                                	<div align="left">
+                                		<input class="goods_id" name="goods_id[]" datatype="need" nullmsg="请选择要购买的商品。" value="{$v.goods_id}" type="checkbox" />
+                     					<span class="Validform_checktip"></span>           		
+                                	</div>
+                                    <a href="{$smarty.const.__MODULE__}/Goods/detail/goods_id/{$v.goods_id}" target="_blank"><img style="width: 80px; height: 80px;" src="{$smarty.const.IMG_UPLOAD}{$v.goods_small_img}" title="{$v.goods_name}" /></a><br />
+                                    <a href="{$smarty.const.__MODULE__}/Goods/detail/goods_id/{$v.goods_id}" target="_blank" class="f6">{$v.goods_name}</a>
+                                </td>
+                                <td><input name="goods_price" readonly value="{$v.goods_price}" style="border:0;height: 20px;text-align: center; ime-mode:disabled;"  type="text" /></td>
+                                <td>
+                                    <div class="plus-button">
+	<!--                                <input onclick="location='{$smarty.const.__CONTROLLER__}/decNum/goods_id/{$v.goods_id}'" type="button" class="numDow"  value="-" /> -->
+	                                	<input type="button" class="numDow" id="{$v.goods_id-1}"  value="-" />
+	                                    <input name="number" class="number" value="{$v.number}" class="inputBg" type="text" />
+	<!--                                <input type="button" class="add" onclick="location='{$smarty.const.__CONTROLLER__}/incNum/goods_id/{$v.goods_id}'" value="+" /> -->
+	                                	<input type="button" id="{$v.goods_id}" class="add" value="+" />
+                                    </div>
+                                </td>
+                                <td class="itemSum">{{$v.goods_price}*{$v.number}}</td>
+                                <td>
+                                    <a onclick="return confirm('确定删除？')" href="{$smarty.const.__CONTROLLER__}/delItem/goods_id/{$v.goods_id}" class="f6">删除</a>
+                                </td>
+                            </tr>
+                            <!-- <input name="goods_id" value="{$v.goods_id}" type="hidden" />-->
+                            <input name="goods_number" value="{$v.goods_number}" type="hidden" />
+                            {/foreach}
+                        </tbody></table>
+                    <table cellpadding="5" cellspacing="1">
+                        <tbody><tr>
+                        		<td width="50%" align="center"><strong>总金额:<span id="itotalPrice">{$totalPrice}</span></strong></td>
+                                <td align="center">
+                                    <input onclick="if(confirm('确定清空？')) location='{$smarty.const.__CONTROLLER__}/clear'" value="清空购物车" class="bnt_blue_1"  type="button" />
+                                    <!--  <input name="submit" class="bnt_blue_1" value="更新购物车" type="button" onclick="location='{$smarty.const.__CONTROLLER__}/modNum'"/>-->
+                                </td>
+                            </tr>
+                        </tbody></table>
+                	<table cellpadding="5" cellspacing="0" width="99%">
+                    <tbody><tr>
+                            <td width="50%" align="center"><input type="button" value="继续购物" style="width:130px;height:40px;" onclick="location='{$smarty.const.__MODULE__}/Goods/catlist'"/></td>
+                            <td align="center"><input type="submit" value="立刻下单" style="width:130px;height:40px;" /></td>
+                        </tr>
+                    </tbody></table>
+                    </form>
+                    {/if}
+            </div>
+            <div class="blank"></div>
+            <div class="blank5"></div>
+        </div>
+        
+<script type="text/javascript">
+$(function(){
+	$(function(){
+		var de=$(".formCart").Validform({
+			tiptype:1,
+			datatype:{
+				"need":function(gets,obj,curform,regxp){
+					var need=1,
+						numselected=curform.find("input[name='"+obj.attr("name")+"']:checked").length;
+					return  numselected >= need ? true : "请选择要购买的商品";
+				},
+			}
+		});
+	});
+	
+	$(function(){
+		//商品减1
+		 var couldRun = true;
+		 $(".numDow").click(function(e){
+			 if(couldRun) {
+	            couldRun = false;
+	            var el = $(e.target);
+	            //alert(el.parents().children('.number:eq(0)').val());
+	            var ajaxurl="{$smarty.const.__CONTROLLER__}/decNums";
+	            var datas = {
+	                 'goods_id':+el.attr('id')+1,
+	            };
+	            var num = el.parents().children('.number:eq(0)').val();
+	            if(num>=2){
+	                decNums(ajaxurl,datas,el);
+	            }else{
+	                el.unbind();
+	                el.attr("disabled",true);
+	                el.parents().children('.number:eq(0)').val(1)
+	            }
+		     }
+		 });
+	     // 半秒后将变为可运行，防止点击过快
+	     setInterval(function(){
+	         couldRun = true;
+	     },500);
+	});
+	     
+     $(function(){
+		 //商品加1
+		 var couldRun = true;
+		 $(".add").click(function(e){
+			 if(couldRun) {
+	             couldRun = false;
+				 var el = $(e.target);
+				 //alert(el.parents().children('.number:eq(0)').val());
+		         var ajaxurl="{$smarty.const.__CONTROLLER__}/incNums";
+		         var datas = {
+		              'goods_id':+el.attr('id'),
+		         };
+		         addNums(ajaxurl,datas,el);
+		         el.parents().children(".numDow:eq(0)").removeAttr("disabled");
+			 }
+		 });
+         setInterval(function(){
+             couldRun = true;
+         },500);
+     });
+	
+     $(function(){
+    	//直接修改商品数量
+		$(".number").change(function(e){
+			//alert(1);
+			var el = $(e.target);
+			var int = /^(\+|-)?\d+$/ ;
+			var val = el.val();
+			if(!int.test(val) || val<1){
+				 el.val(+1);
+				 val = el.val();
+			}
+// 		 el.change(function(){
+                var ajaxurl="{$smarty.const.__CONTROLLER__}/changeNums";
+                var datas = {
+                          'goods_id':+el.next(".add:eq(0)").attr('id'),
+                          'number'  :+val
+                     };
+                changeNums(ajaxurl,datas,el);
+//             });
+		});
+     });
+	 
+})
+</script>

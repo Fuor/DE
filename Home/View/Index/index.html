@@ -1,0 +1,135 @@
+        <div class="blank"></div>
+        <div class="block box">
+
+        <div class="block clearfix">
+
+            <div class="AreaL">
+                <div id="category_tree" class="box_1">
+                	<h3><span>全部商品分类</span></h3>
+                	{foreach $row as $k=>$v}
+	                    <dl>
+	                        <dt><a href="#">{$v.cat_name}</a></dt>
+	                        <dd>   
+	                        {if $v.childs}
+	        					{foreach $v.childs as $kk=>$vv}  
+	                            <a href="{$smarty.const.__MODULE__}/Goods/catlist/id/{$vv.id}">{$vv.cat_name}</a>
+	                            {/foreach}
+	        				{/if}
+	                        </dd>
+	                    </dl>
+                    {/foreach}
+                </div>
+                 <div class="focus box clearfix">
+                    <div id="focus">
+	                    <span class="loading"></span>
+	                    <div class="pic">
+	                        <ul>
+	                            <li>
+		                            <a href="{$smarty.const.__MODULE__}/Goods/detail/goods_id/14">
+		                               <img src="{$smarty.const.IMG_URL}baner1.jpg" alt="粽情山水" />
+		                            </a>
+	                            </li>
+	                            <li>
+	                               <a href="{$smarty.const.__MODULE__}/Goods/detail/goods_id/41">
+                                      <img src="{$smarty.const.IMG_URL}baner2.jpg" alt="海鲜水产" />
+                                   </a>
+	                            </li>
+	                            <li>
+	                               <a href="{$smarty.const.__MODULE__}/Goods/detail/goods_id/1">
+                                      <img src="{$smarty.const.IMG_URL}baner3.jpg" alt="荔枝" />
+                                   </a>
+	                            </li>
+	                            <li>
+	                               <a href="{$smarty.const.__MODULE__}/Goods/detail/goods_id/22">
+                                      <img src="{$smarty.const.IMG_URL}baner4.jpg" alt="酒水" />
+                                   </a>
+	                            </li>
+	                        </ul>
+	                    </div>
+                    </div>       
+                </div>
+                <div style="float:left;text-align:center">
+	               	<div>
+	               		<a href="{$smarty.const.__MODULE__}/Goods/catlist/id/9">
+	               		  <img src="{$smarty.const.IMG_URL}545069_1_pic270_1964.jpg" width="195px" height="190px" alt="香蕉" />
+	               		</a>
+	               	</div>
+	               	<div style="margin-top:5px;">
+	               		<a href="{$smarty.const.__MODULE__}/Goods/catlist/id/9">进口品质，热情发售</a>
+	               	</div>
+	               	<div style="margin-top:20px;">
+	               		<a href="{$smarty.const.__MODULE__}/Goods/detail/goods_id/9">
+	               		<img src="{$smarty.const.IMG_URL}556122_1_pic150_3472.jpg" width="195px" height="190px" alt="火龙果" />
+	               		</a>
+	               	</div>
+	               	<div style="margin-top:5px;">
+	               		<a href="{$smarty.const.__MODULE__}/Goods/detail/goods_id/9">精选火龙果，进口品质！</a>
+	               	</div>
+	            </div>
+            </div>
+            <div class="AreaM">
+                <div class="blank"></div>
+                {foreach $row as $k=>$v}
+                <div class="itemTit" id="itemHot">
+                    <div class="tit"><font size="6px">{$k+1}F</font>{$v.cat_name}</div>
+                     {if $v.childs}
+	        			{foreach $v.childs as $kk=>$vv}  
+                    <h2 class="h2bg"><a href="{$smarty.const.__MODULE__}/Goods/catlist/id/{$vv.id}" >{$vv.cat_name}</a></h2>
+                       {/foreach}
+	        		{/if}
+                </div>
+                <div class="leftImg">
+                {if $k==0}
+                 	<a href="{$smarty.const.__MODULE__}/Goods/detail/goods_id/10" target="_blank">
+                 		<img src="{$smarty.const.IMG_URL}f1.jpg" width="205px" height="470px" alt="龙眼" />
+                 	</a>
+                 {else if $k==1}	
+                 	<a href="{$smarty.const.__MODULE__}/Goods/catlist/id/26" target="_blank">
+                 		<img src="{$smarty.const.IMG_URL}f2.jpg" width="209px" height="470px" alt="牛肉" />
+                 	</a>
+                 {else if $k==2}	
+                 	<a href="{$smarty.const.__MODULE__}/Goods/detail/goods_id/26" target="_blank">
+                 		<img src="{$smarty.const.IMG_URL}chongyin.jpg" width="205px" height="470px" alt="鲜奶" />
+                 	</a>
+                 {else if $k==3}		
+                 	<a href="{$smarty.const.__MODULE__}/Goods/detail/goods_id/37" target="_blank">
+                 		<img src="{$smarty.const.IMG_URL}f4.jpg" width="205px" height="470px" alt="鳕鱼" />
+                 	</a>
+                 {else if $k==4}		
+                 	<a href="{$smarty.const.__MODULE__}/Goods/detail/goods_id/42" target="_blank">
+                 		<img src="{$smarty.const.IMG_URL}shuichan.jpg" width="205px" height="470px" alt="水产" />
+                 	</a>
+                 {else if $k==5}		
+                 	<a href="{$smarty.const.__MODULE__}/Goods/detail/goods_id/45" target="_blank">
+                 		<img src="{$smarty.const.IMG_URL}naipin.jpg" width="205px" height="470px" alt="奶品" />
+                 	</a>
+                 {else if $k==6}		
+                 	<a href="{$smarty.const.__MODULE__}/Goods/detail/goods_id/59" target="_blank">
+                 		<img src="{$smarty.const.IMG_URL}qindan.jpg" width="205px" height="470px" alt="禽蛋" />
+                 	</a>
+				{/if}
+				</div>
+                <div id="show_hot_area" class="clearfix">
+                {foreach $v.childs as $kk=>$vv}
+                	{foreach $goods as $kkk=>$vvv}
+                	   {foreach $vvv as $kkkk=>$vvvv}
+                	       {if $vvvv.goods_category_id==$vv.id}
+                    <div class="goodsItem">
+                        <a href="{$smarty.const.__MODULE__}/Goods/detail/goods_id/{$vvvv.goods_id}"><img src="{$smarty.const.IMG_UPLOAD}{$vvvv.goods_small_img}" alt="{$vvvv.goods_name}" class="goodsimg" ></a><br />
+                        <p class="f1"><a href="{$smarty.const.__MODULE__}/Goods/detail/goods_id/{$vvvv.goods_id}" title="{$vvvv.goods_name}">{$vvvv.goods_name}</a></p>
+                        <font class="f1">￥{$vvvv.goods_price}元</font>
+                    </div>
+                            {/if}
+                        {/foreach}
+                    {/foreach}
+                {/foreach}
+                </div>
+                {/foreach}
+                <div class="blank"></div>
+            </div>
+        </div>
+        </div>
+<script type="text/javascript" src="{$smarty.const.JS_URL}/myfocus/myfocus-2.0.4.full.js"></script>
+<script type="text/javascript" src="{$smarty.const.JS_URL}/index.js"></script>
+<script>
+</script>

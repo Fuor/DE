@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>订单详情</title>
+    <link href="{$smarty.const.ADMIN_CSS_URL}mine.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+<style>
+	{literal}
+	.tr_color{background-color: #9F88FF}
+	li{list-style-type:none;}
+	span{font-size:14px;font-weight:bold;}
+	.order_g{display:inline-block;width:200px;margin:0px 5px 15px 0px;text-align:center;}
+	.order_g1{display:inline-block;width:200px;font-size:14px;font-weight:normal;margin:0px 5px 15px 0px;text-align:center;}
+	.detail{font-size:14px;color:blue;}
+	{/literal}
+</style>
+<div class="div_head">
+	<span>
+	    <span style="float: left;">当前位置是：订单管理-》订单详情</span>
+	    <span style="float:right;margin-right: 8px;font-weight: bold">
+             <a style="text-decoration: none" href="{$smarty.const.__CONTROLLER__}/showlist">【返回】</a></span>
+	</span>
+</div>
+<div class="block clearfix">
+	<div style="margin-left:70px;">
+		<span class="detail">订单号：{$info.order_no}</span>&nbsp;
+		{if {$info.status}==0}
+		<span style="color:red;" class="detail">订单状态:未支付</span>
+		{else if {$info.status}==1}
+		<span style="color:#02DF82;" class="detail">订单状态:已支付</span>&nbsp;
+		<span><a href="{$smarty.const.__CONTROLLER__}/deliver/order_no/{$info.order_no}">发货</a></span>
+		{else if {$info.status}==2}
+		<span style="color:#0072E3;" class="detail">订单状态:已发货</span>
+		{else if {$info.status}==3}
+		<span style="color:#00E3E3;" class="detail">订单状态:已收货</span>
+		{else if {$info.status}==4}
+		<span style="color:#53FF53;" class="detail">订单状态:已评价</span>
+		{/if}
+	</div>
+	<hr/>
+	<div>
+		<div class="detail">
+			收货信息
+			{if $info.status>1}
+			<span style="margin-left:150px;">快递公司：{$info.tracking_type}</span>
+			<span style="margin-left:150px;">快递单号：<a href="http://www.kuaidi100.com/chaxun?com={$info.tracking_type}&nu={$info.tracking_num}" target="_blank">{$info.tracking_num}</a></span>
+			{/if}
+		</div>
+		<hr/>
+		<div style="margin-left:70px;">
+			<p><span>收货姓名：</span>{$info.name}</p>
+			<p><span>手机号码：</span>{$info.phone}</p>
+			<p><span>电子邮件：</span>{$info.email}</p>
+			<p><span>邮政编码：</span>{$info.postcode}</p>
+			<p><span>收货地址：</span>{$info.adress}</p>
+		</div>
+	</div>
+	<div>
+		<div class="detail">订单商品</div>
+		<hr/>
+		<div>
+			<span class="order_g">商品编号</span>
+			<span class="order_g">商品名称</span>
+			<span class="order_g">商品单价</span>
+			<span class="order_g">购买数量</span>
+		</div>
+		{foreach $order_goods as $k=>$v}
+		<div>
+			<span class="order_g1">{$v.goods_id}</span>
+			<span class="order_g1"><a href="/DE/index.php/Home/Goods/detail/goods_id/{$v.goods_id}" target="_blank">{$v.goods_name}</a></span>
+			<span class="order_g1">{$v.goods_price}</span>
+			<span class="order_g1">{$v.number}</span>
+		</div>
+		{/foreach}
+	</div>
+	
+	<div>
+		<div class="detail">支付信息</div>
+		<hr/>
+		<div style="margin-left:70px;">
+			<div><span style="font-size:14px;margin-right:15px;">创建时间：{date("Y-m-d H:i:s",$info.create_time)}</span></div><br/>
+			{if $info.status>0}
+			<div><span style="font-size:14px;margin-right:15px;">支付时间：{date("Y-m-d H:i:s",$info.pay_time)}</span></div><br/>
+			<div><span style="font-size:14px;margin-right:15px;">支付流水：{$info.yborderid}</span></div><br/>
+			<div><span style="font-size:14px;margin-right:15px;">支付银行：{$info.bank}</span></div><br/>
+			{/if}
+			<div>
+				<span style="font-size:14px;font-weight:bold;">订单金额：</span>
+				<span style="color:red;font-size:16px;font-weight:bold;margin-right:15px;">￥{$info.price}</span>
+			</div><br/>
+		</div>
+	</div>
+</div>
+</body>
+</html>

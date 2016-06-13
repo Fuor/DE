@@ -1,0 +1,72 @@
+[ 2016-04-02T14:42:42+08:00 ] 127.0.0.1 /DE/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.047402s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011999s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012253s ]
+ERR: SQLSTATE[HY000] [1049] Unknown database 'shop'
+
+[ 2016-04-02T14:43:44+08:00 ] 127.0.0.1 /DE/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010504s ]
+ERR: SQLSTATE[HY000] [1049] Unknown database 'shop'
+
+[ 2016-04-02T14:45:27+08:00 ] 127.0.0.1 /DE/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000755s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000867s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001048s ]
+ERR: SQLSTATE[HY000] [1049] Unknown database 'shop'
+
+[ 2016-04-02T14:45:30+08:00 ] 127.0.0.1 /DE/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000639s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000839s ]
+ERR: SQLSTATE[HY000] [1049] Unknown database 'shop'
+
+[ 2016-04-02T14:45:30+08:00 ] 127.0.0.1 /DE/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000807s ]
+ERR: SQLSTATE[HY000] [1049] Unknown database 'shop'
+
+[ 2016-04-02T14:45:46+08:00 ] 127.0.0.1 /DE/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000882s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000936s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001157s ]
+ERR: SQLSTATE[HY000] [1049] Unknown database 'shop'
+
+[ 2016-04-02T14:46:21+08:00 ] 127.0.0.1 /DE/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000902s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000861s ]
+ERR: SQLSTATE[HY000] [1049] Unknown database 'shop'
+
+[ 2016-04-02T14:47:32+08:00 ] 127.0.0.1 /DE/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000809s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001683s ]
+ERR: SQLSTATE[HY000] [1049] Unknown database 'shop'
+

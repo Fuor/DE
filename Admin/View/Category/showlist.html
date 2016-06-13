@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+        <title>商品分类列表</title>
+
+        <link href="{$smarty.const.ADMIN_CSS_URL}mine.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+        <style>
+        	{literal}
+            	.tr_color{background-color: #ECFFFF}
+            	.cat{list-style:none;margin:5px 5px}
+        	{/literal}
+        </style>
+        <div class="div_head">
+            <span>
+                <span style="float: left;">当前位置是：商品分类管理-》分类列表</span>
+                <span style="float: right; margin-right: 8px; font-weight: bold;">
+                    <a style="text-decoration: none;" href="{$smarty.const.__CONTROLLER__}/add">【添加一级分类】</a>
+                </span>
+            </span>
+        </div>
+        <div style="font-size: 14px; margin: 10px 5px;">
+        {foreach $row as $k=>$v}
+        	<div class="tr_color">
+        		<ul>
+	        		<li class="cat">
+	        			{$v.cat_name}&nbsp;&nbsp;
+	        			<span style="float:right;">
+		        			<a href="{$smarty.const.__CONTROLLER__}/add/uid/{$v.id}" style="text-decoration:none"><input type="button" value="+"></input></a>
+		        			<a href="{$smarty.const.__CONTROLLER__}/upd/id/{$v.id}"><input type="button" value="修改"></input></a>
+		        			<a href="{$smarty.const.__CONTROLLER__}/del/id/{$v.id}"><input type="button" value="删除"></input></a>
+	        			</span>
+	        		</li>               
+	        		{if $v.childs}
+	        			{foreach $v.childs as $kk=>$vv}
+        			<li class="cat">
+        				<span>—</span>
+        				<a href="{$smarty.const.__CONTROLLER__}/detail/id/{$vv.id}">{$vv.cat_name}</a>
+        				<span style="float:right;">
+        					<a href="{$smarty.const.__CONTROLLER__}/upd/id/{$vv.id}"><input type="button" value="修改"></input></a>
+        					<a href="{$smarty.const.__CONTROLLER__}/del/id/{$vv.id}"><input type="button" value="删除"></input></a>
+        				</span>
+        			</li>
+	        			{/foreach}
+	        		{/if}
+        		</ul>
+        	</div>
+        {/foreach}
+        </div>
+    </body>
+</html>

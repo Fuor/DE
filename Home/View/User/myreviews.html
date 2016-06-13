@@ -1,0 +1,72 @@
+<div class="block box">
+    <div class="blank"></div>
+    <div id="ur_here"> 当前位置:
+		<a href="{$smarty.const.__MODULE__}">首页</a> <code>&gt;</code>
+		<a href="{$smarty.const.__CONTROLLER__}/index">用户中心</a> <code>&gt;</code>我的评价
+    </div>
+</div>
+<div class="blank"></div>
+<div class="block box"></div>
+
+<div class="block clearfix">
+	<div class="AreaL" style="width:17%">
+		<h3><span>全部功能</span></h3> 
+		<div id="category_tree" class="box_1" style="font-size:14px" >
+			<dl>
+				<dd>     
+				    <a href="{$smarty.const.__CONTROLLER__}/info">个人信息</a>
+				</dd>
+				<dd>     
+				    <a href="{$smarty.const.__CONTROLLER__}/myorder">我的订单</a>
+				</dd>
+				<dd>     
+				    <a href="{$smarty.const.__MODULE__}/Cart/index">去购物车</a>
+				</dd>
+				<dd>     
+				    <a href="{$smarty.const.__CONTROLLER__}/myreviews">我的评价</a>
+				</dd>
+				<dd>     
+				    <a href="{$smarty.const.__CONTROLLER__}/repass">修改密码</a>
+				</dd>
+			</dl>
+		</div>
+	</div>
+	<div style="float:left;width:82%">
+		<div style="margin:5px 30px;width:100%">
+			<div>
+				<span style="display:inline-block;width:45px;margin-left:15px;font-size:14px;color:blue;">满意度</span>
+				<span style="display:inline-block;width:300px;margin-left:60px;font-size:14px;color:blue;">评价</span>
+				<span style="display:inline-block;width:300px;margin-left:60px;font-size:14px;color:blue;">商品</span>
+			</div>
+		{foreach $review as $k=>$v}
+			<div style="margin:15px 20px;">
+				<div style="float:left;">
+					<ul>
+						<li style="width:45px;">
+							{if $v.rate==0}<font color="green">满意</font>
+							{else if $v.rate==1}<font color="blue">一般</font>
+							{else}<font color="red">不满意</font>
+							{/if}
+						</li>
+					</ul>
+				</div>
+				<div style="float:left;margin-left:60px;">
+					<ul>
+						<li style="text-align:left;width:300px;">{$v.review}</li>
+						<li style="width:200px;color:#8E8E8E;">[{date("Y-m-d H:i:s",$v.add_time)}]</li>
+					</ul>
+				</div>
+				<div style="float:left;margin-left:60px;">
+					<ul>
+						<li style="text-align:left;width:300px;">
+							<a href="{$smarty.const.__MODULE__}/Goods/detail/goods_id/{$v.goods_id}" target="_blank">{$goods[$v.goods_id]}</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<hr style="margin:0px;width:850px">
+		{/foreach}
+		</div>
+		 {$pagelist}
+	</div>
+</div>

@@ -1,0 +1,89 @@
+<div class="block box">
+    <div class="blank"></div>
+    <div id="ur_here"> 当前位置:
+		<a href="{$smarty.const.__MODULE__}">首页</a> <code>&gt;</code>
+		<a href="{$smarty.const.__CONTROLLER__}/index">用户中心</a> <code>&gt;</code>我的订单
+    </div>
+</div>
+<div class="blank"></div>
+<div class="block box"></div>
+
+<div class="block clearfix">
+	<div class="AreaL" style="width:17%">
+		<h3><span>全部功能</span></h3> 
+		<div id="category_tree" class="box_1"  style="font-size:14px">
+			<dl>
+				<dd>     
+				    <a href="{$smarty.const.__CONTROLLER__}/info">个人信息</a>
+				</dd>
+				<dd>     
+				    <a href="{$smarty.const.__CONTROLLER__}/myorder">我的订单</a>
+				</dd>
+				<dd>     
+				    <a href="{$smarty.const.__MODULE__}/Cart/index">去购物车</a>
+				</dd>
+				<dd>     
+				    <a href="{$smarty.const.__CONTROLLER__}/myreviews">我的评价</a>
+				</dd>
+				<dd>     
+				    <a href="{$smarty.const.__CONTROLLER__}/repass">修改密码</a>
+				</dd>
+			</dl>
+		</div>
+	</div>
+	<div style="float:left;width:82%">
+		<div style="margin:5px 30px;width:100%">
+			<p>
+				<span class="order_span">订单信息</span>
+				<span style="width:10%;" class="order_span">收货人</span>
+				<span class="order_span">支付金额</span>
+				<span class="order_span">创建时间</span>
+				<span style="width:10%;" class="order_span">订单状态</span>
+				<span style="width:16%;" class="order_span">操作</span>
+			</p>
+		{foreach $myorder as $k=>$v}
+			<p>
+				<span class="order_list">订单号：<br/><a href="{$smarty.const.__MODULE__}/Order/detail/order_no/{$v.order_no}">{$v.order_no}</a></span>
+				<span style="width:10%;" class="order_list">{$v.name}</span>
+				<span class="order_list">{$v.price}元</span>
+				<span class="order_list">{date("Y-m-d H:i:s",$v.create_time)}</span>
+				<span style="width:10%;" class="order_list">
+				{if {$v.status}==0}
+					未支付
+				{else if {$v.status}==1}
+					已支付
+				{else if {$v.status}==2}
+					已发货
+				{else if {$v.status}==3}
+					已收货
+				{else if {$v.status}==4}
+					已评价
+				{/if}
+				</span>
+				<span style="width:16%;" class="order_list">
+				{if {$v.status}==0}
+					<a href="{$smarty.const.__MODULE__}/Order/detail/order_no/{$v.order_no}">查看</a>
+					|<a onclick="return confirm('确定删除？')" href="{$smarty.const.__MODULE__}/Order/deleteOrder/order_no/{$v.order_no}">删除</a>
+				{else if {$v.status}==1}
+					<a href="{$smarty.const.__MODULE__}/Order/detail/order_no/{$v.order_no}">查看</a>
+				{else if {$v.status}==2}
+					<a href="{$smarty.const.__MODULE__}/Order/detail/order_no/{$v.order_no}">查看</a>
+					|<a href="http://www.kuaidi100.com/chaxun?com={$v.tracking_type}&nu={$v.tracking_num}" target="_blank">物流</a>
+					|<a onclick="return confirm('确定已经收到货了？')" href="{$smarty.const.__MODULE__}/Order/receipt/order_no/{$v.order_no}">确认收货</a>
+				{else if {$v.status}==3}
+					<a href="{$smarty.const.__MODULE__}/Order/detail/order_no/{$v.order_no}">查看</a>
+					|<a href="{$smarty.const.__MODULE__}/Reviews/add/order_no/{$v.order_no}">评价</a>
+					|<a onclick="return confirm('确定删除？')" href="{$smarty.const.__MODULE__}/Order/deleteOrder/order_no/{$v.order_no}">删除</a>
+				{else if {$v.status}==4}
+					<a href="{$smarty.const.__MODULE__}/Order/detail/order_no/{$v.order_no}">查看</a>
+					|<a href="{$smarty.const.__MODULE__}/Reviews/detail/order_no/{$v.order_no}">已评价</a>
+					|<a onclick="return confirm('确定删除？')" href="{$smarty.const.__MODULE__}/Order/deleteOrder/order_no/{$v.order_no}">删除</a>
+				{/if}
+				</span>
+			</p>
+			<hr style="margin:0px;width:850px">
+		{/foreach}
+		</div>
+		 <div style="float:right;">{$pagelist}</div>
+	</div>
+</div>

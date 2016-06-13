@@ -1,0 +1,39 @@
+
+        <div class="block box">
+            <div class="blank"></div>
+            <div id="ur_here">
+                当前位置: <a href="{$smarty.const.__MODULE__}">首页</a> <code>&gt;</code>订单支付
+            </div>
+        </div>
+        <div class="block">
+          	<form action='{$url}' method="post"  name="myform"  class="payform">
+            <div class="flowBox" style="margin: 0pt auto 70px;">
+                <h6 style="text-align: center; height: 30px; line-height: 30px;">感谢您在本店购物！您的订单已提交成功，请记住您的订单号: <font style="color: red;">{$order_no}</font>，您的应付款金额为:￥<font style="color: red;">{$totalprice}</font>元</h6>
+                <table style="border: 1px solid rgb(221, 221, 221); margin: 20px auto;" align="center" bgcolor="#ffffff" border="0" cellpadding="15" cellspacing="0" width="99%">
+                    <tbody>
+                    	<tr>
+                            <td align="center" bgcolor="#ffffff">
+								 <div class="form-group paytype">
+								  	<div class="paylogo">
+								  		<label><img src="{$smarty.const.IMG_URL}yeepay.jpg" /></label><br/>
+								  		<label><input type="radio" name="paytypes" value="1" checked="checked"/> 借记卡网银支付</label>
+									</div>
+								</div>
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td>
+                        		<div style="text-align: center;">
+                        			<input type="submit" value="去支付" onclick="submitpay();return false" style="width:100px;height:40px;font-size:18px;"/>
+                        		</div>
+                        	</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+			</form>
+            <p style="text-align: center; margin-bottom: 20px;">您可以 <a href="{$smarty.const.__MODULE__}">返回首页</a> 或去 <a href="#">用户中心</a></p>
+        </div>
+
+

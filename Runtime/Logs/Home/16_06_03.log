@@ -1,0 +1,239 @@
+[ 2016-06-03T23:58:46+08:00 ] 127.0.0.1 /DE/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.018640s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.029150s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.029542s ]
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.3748s ]
+SQL: SELECT * FROM `sw_category` ORDER BY `pid` asc  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `sw_goods` [ RunTime:0.0954s ]
+SQL: SELECT * FROM `sw_goods` WHERE ( status=1 and goods_number>0 and goods_category_id='6' ) ORDER BY rand() LIMIT 1   [ RunTime:0.1546s ]
+NOTIC: [8] Undefined index: childs D:\PHP\wamp\www\DE\Home\Controller\IndexController.class.php 第 26 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\PHP\wamp\www\DE\Home\Controller\IndexController.class.php 第 26 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: username D:\PHP\wamp\www\DE\Runtime\Cache\412fc1c42afb6b35093bbc415f909a5f039ccee0.file.header.html.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.463214s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.463601s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.035384s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.035616s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: childs D:\PHP\wamp\www\DE\Runtime\Cache\75d3c4843f176db28a964d7ce533fe31f98cb039.file.index.html.php 第 51 行.
+NOTIC: [8] Undefined index: childs D:\PHP\wamp\www\DE\Runtime\Cache\75d3c4843f176db28a964d7ce533fe31f98cb039.file.index.html.php 第 116 行.
+NOTIC: [8] Undefined index: childs D:\PHP\wamp\www\DE\Runtime\Cache\75d3c4843f176db28a964d7ce533fe31f98cb039.file.index.html.php 第 167 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.114615s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.036214s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.115293s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060622s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.151747s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.176837s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\PHP\wamp\www\ThinkPHP\ThinkPHP\Library\Think\View.class.php:95) D:\PHP\wamp\www\ThinkPHP\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\PHP\wamp\www\ThinkPHP\ThinkPHP\Library\Think\View.class.php:95) D:\PHP\wamp\www\ThinkPHP\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\PHP\wamp\www\ThinkPHP\ThinkPHP\Library\Think\View.class.php:95) D:\PHP\wamp\www\ThinkPHP\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.018920s ]
+INFO: [ app_end ] --END-- [ RunTime:0.019076s ]
+
+[ 2016-06-03T23:59:07+08:00 ] 127.0.0.1 /DE/index.php/Home/Goods/detail/goods_id/121
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000723s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000765s ]
+SQL: SHOW COLUMNS FROM `sw_goods` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `sw_goods` WHERE ( goods_id='121' and status=1 and goods_number>0  ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sw_reviews` [ RunTime:0.0961s ]
+SQL: SELECT * FROM `sw_reviews` WHERE ( goods_id='121' )  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: REQUEST_url D:\PHP\wamp\www\DE\Component\page.class.php 第 36 行.
+NOTIC: [8] Undefined index: REQUEST_url D:\PHP\wamp\www\DE\Component\page.class.php 第 36 行.
+SQL: select * from sw_reviews where goods_id='121'Limit 0, 15 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `sw_category` ORDER BY `pid` asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0106s ]
+SQL: SELECT * FROM `sw_category` WHERE ( id='0' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sw_category` WHERE ( id='' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `sw_goods` WHERE ( status=1 and goods_number>0  ) ORDER BY rand() LIMIT 5   [ RunTime:0.0236s ]
+SQL: SELECT * FROM `sw_goods` WHERE ( status=1 and goods_number>0  ) ORDER BY volume desc LIMIT 10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: username D:\PHP\wamp\www\DE\Runtime\Cache\412fc1c42afb6b35093bbc415f909a5f039ccee0.file.header.html.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016847s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017012s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000731s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: childs D:\PHP\wamp\www\DE\Runtime\Cache\72946cd36839dbdc51fcf5e92d1814720a1655ef.file.detail.html.php 第 69 行.
+NOTIC: [8] A non well formed numeric value encountered D:\PHP\wamp\www\DE\Runtime\Cache\72946cd36839dbdc51fcf5e92d1814720a1655ef.file.detail.html.php 第 254 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.408716s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001225s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.409360s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001720s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.411165s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.412305s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\PHP\wamp\www\ThinkPHP\ThinkPHP\Library\Think\View.class.php:95) D:\PHP\wamp\www\ThinkPHP\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\PHP\wamp\www\ThinkPHP\ThinkPHP\Library\Think\View.class.php:95) D:\PHP\wamp\www\ThinkPHP\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\PHP\wamp\www\ThinkPHP\ThinkPHP\Library\Think\View.class.php:95) D:\PHP\wamp\www\ThinkPHP\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000840s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000999s ]
+
+[ 2016-06-03T23:59:07+08:00 ] 127.0.0.1 /DE/index.php/Home/Goods/detail/goods_id/122
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000665s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001012s ]
+SQL: SHOW COLUMNS FROM `sw_goods` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `sw_goods` WHERE ( goods_id='122' and status=1 and goods_number>0  ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `sw_reviews` [ RunTime:0.1104s ]
+SQL: SELECT * FROM `sw_reviews` WHERE ( goods_id='122' )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: REQUEST_url D:\PHP\wamp\www\DE\Component\page.class.php 第 36 行.
+NOTIC: [8] Undefined index: REQUEST_url D:\PHP\wamp\www\DE\Component\page.class.php 第 36 行.
+SQL: select * from sw_reviews where goods_id='122'Limit 0, 15 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0085s ]
+SQL: SELECT * FROM `sw_category` ORDER BY `pid` asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `sw_category` WHERE ( id='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sw_category` WHERE ( id='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sw_goods` WHERE ( status=1 and goods_number>0  ) ORDER BY rand() LIMIT 5   [ RunTime:0.0123s ]
+SQL: SELECT * FROM `sw_goods` WHERE ( status=1 and goods_number>0  ) ORDER BY volume desc LIMIT 10   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: waitSecond D:\PHP\wamp\www\ThinkPHP\ThinkPHP\Library\Think\Controller.class.php 第 229 行.
+
+[ 2016-06-03T23:59:08+08:00 ] 127.0.0.1 /DE/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000692s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000796s ]
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `sw_category` ORDER BY `pid` asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `sw_goods` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `sw_goods` WHERE ( status=1 and goods_number>0 and goods_category_id='6' ) ORDER BY rand() LIMIT 1   [ RunTime:0.0087s ]
+NOTIC: [8] Undefined index: childs D:\PHP\wamp\www\DE\Home\Controller\IndexController.class.php 第 26 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\PHP\wamp\www\DE\Home\Controller\IndexController.class.php 第 26 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: username D:\PHP\wamp\www\DE\Runtime\Cache\412fc1c42afb6b35093bbc415f909a5f039ccee0.file.header.html.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018142s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018318s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000757s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: childs D:\PHP\wamp\www\DE\Runtime\Cache\75d3c4843f176db28a964d7ce533fe31f98cb039.file.index.html.php 第 51 行.
+NOTIC: [8] Undefined index: childs D:\PHP\wamp\www\DE\Runtime\Cache\75d3c4843f176db28a964d7ce533fe31f98cb039.file.index.html.php 第 116 行.
+NOTIC: [8] Undefined index: childs D:\PHP\wamp\www\DE\Runtime\Cache\75d3c4843f176db28a964d7ce533fe31f98cb039.file.index.html.php 第 167 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002649s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001199s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.003237s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001652s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.004805s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005844s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\PHP\wamp\www\ThinkPHP\ThinkPHP\Library\Think\View.class.php:95) D:\PHP\wamp\www\ThinkPHP\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\PHP\wamp\www\ThinkPHP\ThinkPHP\Library\Think\View.class.php:95) D:\PHP\wamp\www\ThinkPHP\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\PHP\wamp\www\ThinkPHP\ThinkPHP\Library\Think\View.class.php:95) D:\PHP\wamp\www\ThinkPHP\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000849s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000986s ]
+
+[ 2016-06-03T23:59:12+08:00 ] 127.0.0.1 /DE/index.php/Home/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+NOTIC: [2048] Declaration of Home\Controller\UserController::success() should be compatible with Think\Controller::success($message = '', $jumpUrl = '', $ajax = false) D:\PHP\wamp\www\DE\Home\Controller\UserController.class.php 第 498 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: username D:\PHP\wamp\www\DE\Runtime\Cache\412fc1c42afb6b35093bbc415f909a5f039ccee0.file.header.html.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012676s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012830s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000986s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001195s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.074721s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001698s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000165s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.075829s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003851s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.080234s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.083253s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\PHP\wamp\www\ThinkPHP\ThinkPHP\Library\Think\View.class.php:95) D:\PHP\wamp\www\ThinkPHP\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\PHP\wamp\www\ThinkPHP\ThinkPHP\Library\Think\View.class.php:95) D:\PHP\wamp\www\ThinkPHP\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\PHP\wamp\www\ThinkPHP\ThinkPHP\Library\Think\View.class.php:95) D:\PHP\wamp\www\ThinkPHP\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000949s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001099s ]
+
+[ 2016-06-03T23:59:12+08:00 ] 127.0.0.1 /DE/index.php/Home/User/verifyImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000814s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000791s ]
+NOTIC: [2048] Declaration of Home\Controller\UserController::success() should be compatible with Think\Controller::success($message = '', $jumpUrl = '', $ajax = false) D:\PHP\wamp\www\DE\Home\Controller\UserController.class.php 第 498 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000924s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001100s ]
+
+[ 2016-06-03T23:59:14+08:00 ] 127.0.0.1 /DE/index.php/Home/User/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000703s ]
+NOTIC: [2048] Declaration of Home\Controller\UserController::success() should be compatible with Think\Controller::success($message = '', $jumpUrl = '', $ajax = false) D:\PHP\wamp\www\DE\Home\Controller\UserController.class.php 第 498 行.
+SQL: SHOW COLUMNS FROM `sw_user` [ RunTime:0.0978s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: username D:\PHP\wamp\www\DE\Runtime\Cache\412fc1c42afb6b35093bbc415f909a5f039ccee0.file.header.html.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018070s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018563s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000798s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051214s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001307s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.052946s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005685s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.057903s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000133s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.063780s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\PHP\wamp\www\ThinkPHP\ThinkPHP\Library\Think\View.class.php:95) D:\PHP\wamp\www\ThinkPHP\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\PHP\wamp\www\ThinkPHP\ThinkPHP\Library\Think\View.class.php:95) D:\PHP\wamp\www\ThinkPHP\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\PHP\wamp\www\ThinkPHP\ThinkPHP\Library\Think\View.class.php:95) D:\PHP\wamp\www\ThinkPHP\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004495s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005219s ]
+

@@ -1,0 +1,33 @@
+<div class="block box">
+    <div class="blank"></div>
+    <div id="ur_here"> 当前位置:
+		<a href="{$smarty.const.__MODULE__}">首页</a> <code>&gt;</code>找回密码
+    </div>
+</div>
+<div class="blank"></div>
+<div class="block box"></div>
+
+<div class="block clearfix">
+    <div class="usBox">
+        <div class="setpassBox">
+			<form id="formLogin" name="formLogin" class="formLogin" action="{$smarty.const.__SELF__}" method="post">
+				<div class="newPass">
+				    <input type="password" placeholder="请输入新密码" name="password" size="25" datatype="*6-16" nullmsg="请输入密码！" errormsg="密码范围在6~16位之间！" type="password"/>
+				    <span class="Validform_checktip"></span>
+				</div>
+				<div class="newPass">
+				    <input type="password" placeholder="请输入确认密码" recheck="password" datatype="*" name="cpassword" nullmsg="请输入确认密码！" errormsg="两次密码不一致！" type="password"/>
+                    <span class="Validform_checktip"></span>
+				</div>
+				<div class="setpassButton"><input type="submit" value="确定"/></div>
+			</form>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+    $(function() {
+        $(".formLogin").Validform({
+            tiptype : 1
+        });
+    })
+</script>

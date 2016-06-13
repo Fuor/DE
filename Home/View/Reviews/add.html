@@ -1,0 +1,47 @@
+<div class="block box">
+    <div class="blank"></div>
+    <div id="ur_here"> 当前位置:
+		<a href="{$smarty.const.__MODULE__}">首页</a> <code>&gt;</code>
+		<a href="{$smarty.const.__MODULE__}/User/myreview">我的评价</a> <code>&gt;</code>添加评价
+    	<span style="float:right;margin-right:90px">订单号：{$order_no}</span>
+    </div>
+</div>
+<div class="blank"></div>
+<div class="block box"></div>
+
+<div class="block clearfix">
+	<form action="{$smarty.const.__SELF__}" method="post">
+		{foreach $goods as $k=>$v}
+		<div style="width:950px;">
+			<div style="float:left;margin-top:20px;width:500px;">
+				<ul style="text-align:center;">
+					<li>
+						<a href="{$smarty.const.__MODULE__}/Goods/detail/goods_id/{$v.goods_id}" target="_blank">
+							<img src="{$smarty.const.IMG_UPLOAD}{$v.goods_small_img}" height="150" width="150" />
+						</a>
+					</li>
+					<li>
+						<a href="{$smarty.const.__MODULE__}/Goods/detail/goods_id/{$v.goods_id}" target="_blank">
+							{$v.goods_name}
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div style="float:left;margin-top:40px;width:450px;">
+				<p>
+					<input type="radio" checked name="rate[{$k}]" id="rate[{$k}]" value="0"/>满意
+					<input type="radio" name="rate[{$k}]" id="rate[{$k}]" value="1"/>一般
+					<input type="radio" name="rate[{$k}]" id="rate[{$k}]"  value="2"/>不满意
+				</p>
+				<textarea name="review[]" placeholder="评论内容" style="width:350px;height:90px;resize: none;"></textarea>
+				<!-- 隐藏传递商品ID -->
+				<input type="hidden" name="goods_id[]" value="{$v.goods_id}"/>
+				<input type="hidden" name="user_id[]" value="{$smarty.session.user_id}"/>
+				<input type="hidden" name="add_time[]" value="{$smarty.now}"/>
+				<input type="hidden" name="order_no" value="{$order_no}"/>
+			</div>
+		</div>
+		{/foreach}
+		<div style="clear:both;margin-left:650px"><input style="width:60px;height:30px;" type="submit" value="发表"/></div>
+	</form>
+</div>

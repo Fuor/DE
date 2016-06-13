@@ -1,0 +1,10 @@
+[ 2015-10-10T19:45:59+08:00 ] 127.0.0.1 /index.php/Public/Home/images/di.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000841s ]
+
+[ 2015-10-10T19:46:05+08:00 ] 127.0.0.1 /index.php/Public/Home/images/di.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000633s ]
+

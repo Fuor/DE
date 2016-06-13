@@ -1,0 +1,25 @@
+<div class="block box">
+    <div class="blank"></div>
+    <div id="ur_here">
+        	当前位置: <a href="{$smarty.const.__MODULE__}">首页</a> <code>&gt;</code>商品列表
+    </div>
+</div>
+
+
+
+           
+<div class="block">
+	<div class="block box">
+		<div class="goodsList">
+			{foreach $info as $k =>$v }
+				<div class="item">
+					<div><a href="{$smarty.const.__CONTROLLER__}/detail/goods_id/{$v.goods_id}" target="_blank"><img src="{$smarty.const.IMG_UPLOAD}{$v.goods_big_img}" alt="{$v.goods_name}" height="250px" width="205px"></a></div>
+					<div><font size="3px" color="red">￥{$v.goods_price}</font>&nbsp;&nbsp;&nbsp;&nbsp;销量：{$v.volume}</div>
+					<div><a href="{$smarty.const.__CONTROLLER__}/detail/goods_id/{$v.goods_id}" target="_blank">{$v.goods_name}</a></div>
+				</div>
+			{/foreach}
+		</div>
+	</div>
+	<div style="width:880px;float:left">{$pagelist}</div>
+</div>
+        

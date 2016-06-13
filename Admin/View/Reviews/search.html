@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+        <title>评价查找</title>
+
+        <link href="{$smarty.const.ADMIN_CSS_URL}mine.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+        <style>
+        	{literal}
+            	.tr_color{background-color: #9F88FF}
+        	{/literal}
+        </style>
+        <div class="div_head">
+            <span>
+                <span style="float: left;">当前位置是：评价管理-》评价查找</span>
+            </span>
+        </div>
+        <form class="search" action="{$smarty.const.__CONTROLLER__}/search" method="post">
+	        <div style="margin-left:5px;">
+	            <span><input name="key" datatype="*" nullmsg="请输入关键词。" errormsg="输入有误。" placeholder="请输入关键词" type="text" /></span><span><input type="submit" value="查找"/></span>
+	        </div>
+        </form>
+        <div style="font-size: 13px; margin: 10px 5px;">
+            <table class="table_a" border="1" width="100%">
+                <tbody><tr style="font-weight: bold;">
+                        <td>序号</td>
+                        <td>满意度</td>
+                        <td>评价内容</td>
+                        <td>会员账号</td>
+                        <td>评价商品</td>
+                        <td>所属订单</td>
+                        <td>评价时间</td>
+                        <td align="center">操作</td>
+                    </tr>
+                    {foreach $info as $k =>$v }
+                    <tr id="product1">
+                        <td>{$v.id}</td>
+                        <td>
+                        	{if $v.rate==0}<font color="green">满意</font>
+							{else if $v.rate==1}<font color="blue">一般</font>
+							{else}<font color="red">不满意</font>
+							{/if}
+						</td>
+                        <td style="width:250px;">{$v.review}</td>
+                        <td>{$v.username}</td>
+                        <td>
+                        	<a href="/DE/index.php/Home/Goods/detail/goods_id/{$v.goods_id}"  target="_blank">{$goods[$v.goods_id]}</a>
+                        </td>
+                        <td>
+                        	<a href="{$smarty.const.__MODULE__}/Order/detail/order_no/{$v.order_no}">{$v.order_no}</a>
+                        </td>
+                        <td>{date("Y-m-d H:i:s",$v.add_time)}</td>
+                        <td>
+                        	<a onclick="return confirm('确定删除？')" href="{$smarty.const.__MODULE__}/Reviews/del/id/{$v.id}">删除</a>
+                        </td>
+                    </tr>
+                   {/foreach}
+                    <tr>
+                        <td colspan="20" style="text-align: center;">
+                            {$pagelist}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+   	<script src="{$smarty.const.JS_URL}jquery-1.8.2.js"></script>
+	<script type="text/javascript" src="{$smarty.const.VALIDFORM_JS_URL}Validform_v5.3.2.js"></script>
+    <script type="text/javascript">
+		$(function(){
+			$(".search").Validform({
+				tiptype:2
+			});
+		})
+	</script>
+        
+    </body>
+</html>

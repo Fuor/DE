@@ -1,0 +1,77 @@
+[ 2015-06-10T09:24:04+08:00 ] 127.0.0.1 /DE/index.php/Home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.039003s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011001s ]
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0830s ]
+SQL: SELECT * FROM `sw_category` ORDER BY `pid` asc  [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `sw_category` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `sw_goods` [ RunTime:0.0760s ]
+SQL: SELECT * FROM `sw_goods` WHERE ( status=1 and goods_number>0 and catid='58' ) ORDER BY rand() LIMIT 1   [ RunTime:0.1520s ]
+SQL: SELECT * FROM `sw_goods` WHERE ( status=1 and goods_number>0 and catid='59' ) ORDER BY rand() LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_goods` WHERE ( status=1 and goods_number>0 and catid='60' ) ORDER BY rand() LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_goods` WHERE ( status=1 and goods_number>0 and catid='61' ) ORDER BY rand() LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_goods` WHERE ( status=1 and goods_number>0 and catid='62' ) ORDER BY rand() LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT * FROM `sw_goods` WHERE ( status=1 and goods_number>0 and catid='74' ) ORDER BY rand() LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_goods` WHERE ( status=1 and goods_number>0 and catid='39' ) ORDER BY rand() LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_goods` WHERE ( status=1 and goods_number>0 and catid='57' ) ORDER BY rand() LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sw_goods` WHERE ( status=1 and goods_number>0 and catid='64' ) ORDER BY rand() LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_goods` WHERE ( status=1 and goods_number>0 and catid='63' ) ORDER BY rand() LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_goods` WHERE ( status=1 and goods_number>0 and catid='22' ) ORDER BY rand() LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT * FROM `sw_goods` WHERE ( status=1 and goods_number>0 and catid='65' ) ORDER BY rand() LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_goods` WHERE ( status=1 and goods_number>0 and catid='40' ) ORDER BY rand() LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_goods` WHERE ( status=1 and goods_number>0 and catid='41' ) ORDER BY rand() LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_goods` WHERE ( status=1 and goods_number>0 and catid='42' ) ORDER BY rand() LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_goods` WHERE ( status=1 and goods_number>0 and catid='43' ) ORDER BY rand() LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sw_goods` WHERE ( status=1 and goods_number>0 and catid='44' ) ORDER BY rand() LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_goods` WHERE ( status=1 and goods_number>0 and catid='45' ) ORDER BY rand() LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_goods` WHERE ( status=1 and goods_number>0 and catid='46' ) ORDER BY rand() LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_goods` WHERE ( status=1 and goods_number>0 and catid='47' ) ORDER BY rand() LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_goods` WHERE ( status=1 and goods_number>0 and catid='75' ) ORDER BY rand() LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_goods` WHERE ( status=1 and goods_number>0 and catid='76' ) ORDER BY rand() LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_goods` WHERE ( status=1 and goods_number>0 and catid='77' ) ORDER BY rand() LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT * FROM `sw_goods` WHERE ( status=1 and goods_number>0 and catid='78' ) ORDER BY rand() LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_goods` WHERE ( status=1 and goods_number>0 and catid='69' ) ORDER BY rand() LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_goods` WHERE ( status=1 and goods_number>0 and catid='71' ) ORDER BY rand() LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_goods` WHERE ( status=1 and goods_number>0 and catid='70' ) ORDER BY rand() LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_goods` WHERE ( status=1 and goods_number>0 and catid='49' ) ORDER BY rand() LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sw_goods` WHERE ( status=1 and goods_number>0 and catid='68' ) ORDER BY rand() LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_goods` WHERE ( status=1 and goods_number>0 and catid='67' ) ORDER BY rand() LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_goods` WHERE ( status=1 and goods_number>0 and catid='48' ) ORDER BY rand() LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_goods` WHERE ( status=1 and goods_number>0 and catid='66' ) ORDER BY rand() LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_goods` WHERE ( status=1 and goods_number>0 and catid='50' ) ORDER BY rand() LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_goods` WHERE ( status=1 and goods_number>0 and catid='72' ) ORDER BY rand() LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT * FROM `sw_goods` WHERE ( status=1 and goods_number>0 and catid='73' ) ORDER BY rand() LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_goods` WHERE ( status=1 and goods_number>0 and catid='55' ) ORDER BY rand() LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_goods` WHERE ( status=1 and goods_number>0 and catid='53' ) ORDER BY rand() LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_goods` WHERE ( status=1 and goods_number>0 and catid='52' ) ORDER BY rand() LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_goods` WHERE ( status=1 and goods_number>0 and catid='51' ) ORDER BY rand() LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_goods` WHERE ( status=1 and goods_number>0 and catid='79' ) ORDER BY rand() LIMIT 1   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: username D:\PHP\wamp\www\DE\Runtime\Cache\412fc1c42afb6b35093bbc415f909a5f039ccee0.file.header.html.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.254015s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.254015s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.022001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.090005s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.091005s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.131008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.140008s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\PHP\wamp\www\ThinkPHP\ThinkPHP\Library\Think\View.class.php:95) D:\PHP\wamp\www\ThinkPHP\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\PHP\wamp\www\ThinkPHP\ThinkPHP\Library\Think\View.class.php:95) D:\PHP\wamp\www\ThinkPHP\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\PHP\wamp\www\ThinkPHP\ThinkPHP\Library\Think\View.class.php:95) D:\PHP\wamp\www\ThinkPHP\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.042003s ]
+INFO: [ app_end ] --END-- [ RunTime:0.042003s ]
+
